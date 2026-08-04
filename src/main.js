@@ -151,6 +151,21 @@ let cleanupView = () => {};
 const getSlug = (path = location.pathname) => path.match(/^\/projects\/([^/]+)\/?$/)?.[1];
 const isAuthenticated = () => sessionStorage.getItem(NDA_KEY) === 'true';
 const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+const applyNonBreakingSpaces = (root = document.body) => {
+  const shortWords = 'а|без|в|во|для|до|за|и|из|к|ко|на|над|не|но|о|об|от|по|под|при|про|с|со|у';
+  const walker = document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(node){
+    if (!node.nodeValue?.trim() || node.parentElement?.closest('script,style,textarea,input,code,pre')) return NodeFilter.FILTER_REJECT;
+    return NodeFilter.FILTER_ACCEPT;
+  }});
+  const nodes=[];
+  while(walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach((node) => {
+    node.nodeValue = node.nodeValue
+      .replace(new RegExp(`(^|[\\s([{«„"'])(${shortWords})\\s+`,'giu'),(_,prefix,word)=>`${prefix}${word}\u00a0`)
+      .replace(/(\d)\s+(?=\d|%|₽|лет\b|г(?:од(?:а|у|ом|ы)?|\.)\b)/giu,'$1\u00a0')
+      .replace(/\s+—\s+/g,'\u00a0— ');
+  });
+};
 
 const footer = () => `<footer class="case-footer"><span>vibecoded by @krawleek in 2026</span><div><a href="https://t.me/krawleek" target="_blank" rel="noreferrer">Telegram</a><a href="https://www.linkedin.com/in/krawleek/" target="_blank" rel="noreferrer">LinkedIn</a><a class="case-footer__email" href="mailto:krawleek@yandex.ru">Email</a></div></footer>`;
 
@@ -313,6 +328,7 @@ const render = () => {
     navigate('/', true);
     return;
   }
+  applyNonBreakingSpaces();
   initCase();
   requestAnimationFrame(() => document.body.classList.add('view-ready'));
 };
