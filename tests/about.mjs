@@ -16,7 +16,11 @@ try {
           return {overflow:document.documentElement.scrollWidth>innerWidth,cards:[...document.querySelectorAll('.about-card')].map(rect),text:[...document.querySelectorAll('.about-copy')].filter(el=>+getComputedStyle(el).opacity>.05).map(rect)};
         });
         expect(layout.overflow).toBe(false);
-        if(p===0||p===1)expect(layout.cards.some(card=>card.y<height&&card.bottom>height)).toBe(true);
+        if(p===0){
+          expect(layout.cards.filter(card=>card.y<0&&card.bottom>0)).toHaveLength(0);
+          expect(layout.cards.filter(card=>card.y<height&&card.bottom>height)).toHaveLength(6);
+        }
+        if(p===1)expect(layout.cards.some(card=>card.y<height&&card.bottom>height)).toBe(true);
         for(const card of layout.cards) {
 
           for(const text of layout.text)expect(card.x>=text.right||card.right<=text.x||card.y>=text.bottom||card.bottom<=text.y,`overlap ${width} ${lang} ${p}`).toBe(true);

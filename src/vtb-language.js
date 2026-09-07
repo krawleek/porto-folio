@@ -23,7 +23,7 @@ const en={
  '238:3615':'Redesigning the key workflows shifted the portal from viewing data to taking action, especially forecasting savings and setting up recurring payments.\n\nThe solutions were evaluated through internal usability tests and scenarios close to real-world use.',
  '238:3620':'More successful completion of recurring payment setup','238:3623':'Contextual explanations reduced reliance on support','238:3626':'A transparent savings structure increased trust in the service',
  '238:3652':'Many thanks to the VTB Pension Fund team for their responsiveness, interest in our ideas, and warm collaboration despite the workload and fast pace 🔅',
- '238:3633':'Alfa-Bank AI assistant 🥇'
+ '238:3633':'Alfa-Bank AI assistant'
 };
 const extra={'Команда':'Team','Роман Беньо, арт-директор':'Roman Benyo, Art Director','Эдуард Горбунов, Senior Product Designer':'Eduard Gorbunov, Senior Product Designer'};
 for(const [id,value] of Object.entries(en))copy[id].split('\n\n').forEach((ru,i)=>extra[ru]=value.split('\n\n')[i]);

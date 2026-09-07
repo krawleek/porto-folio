@@ -2,3 +2,4 @@
 @media(max-width:1100px){.vtb-main .case-results h3{font-size:56px;line-height:58px;letter-spacing:-2px}.vtb-role p:first-child{font-size:38px;line-height:42px}}
 @media(max-width:700px){.vtb-cover{border-radius:16px}.vtb-role{font-size:22px;line-height:27px;letter-spacing:-.5px}.vtb-role p:first-child{font-size:28px;line-height:32px;letter-spacing:-1px}.showcase-intro{font-size:17px;line-height:21px;margin-bottom:12px}.vtb-main .showcase-copy .case-lead{font-size:15px;line-height:19px}.vtb-main .showcase-descriptions{min-height:76px}.vtb-main .showcase-copy h2{font-size:26px;line-height:28px;margin-bottom:12px}.vtb-main .showcase-sticky{gap:12px}.vtb-next-art{opacity:.7}.vtb-next-art:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent,#e4e4e4 95%)}.vtb-thanks{font-size:18px;line-height:23px}}
 @media(prefers-reduced-motion:reduce){.vtb-main .showcase{height:auto}}
+.vtb-cover img{width:100%;height:100%;left:0;top:0;object-fit:contain}

@@ -1,7 +1,7 @@
 import {initCaseLanguage} from './nspk-language.js';
 import copy from './alfa-copy.json';
 const en={
- '26:10373':'Alfa-Bank AI assistant 🥇',
+ '26:10373':'Alfa-Bank AI assistant',
  '26:10374':'In 2024, Alfa-Bank held a competition to rethink ALF 1.0, its mobile banking assistant. Working with a colleague, we developed the ALF 2.0 concept in five days and won first place.',
  '111:8716':'Conducted research: an analysis of ALF 1.0, five hallway tests, a survey of 18 users of similar AI assistants (Alice, ChatGPT, Oleg), and interviews with 10 bank customers.',
  '111:8719':'Defined the core functionality: a financial adviser for budgets and subscriptions, and a banking consultant for products.',
@@ -39,15 +39,15 @@ const en={
  '111:3936':'A B2E version: a desktop assistant that suggests ways for bank employees to help customers.',
  '111:4012':'More about the case',
  '111:4054':'AI as a layer of financial intelligence',
- '111:4055':'In 2024, Amgalan Dorje and I won Alfa-Bank’s design competition with ALF 2.0, a next-generation AI banking assistant.',
+ '111:4055':'In 2024, Amgalan Dorzhiev and I won Alfa-Bank’s design competition with ALF 2.0, a next-generation AI banking assistant.',
  '111:4027':'Moving away from anthropomorphism',
  '111:4028':'In 2025, Alfa-Bank introduced Push, a vibrant mascot that helped showcase the bank’s capabilities.',
- '111:4061':'Award ceremony',
- '111:4062':'In 2025, Alfa-Bank introduced Push, a mascot with a distinctive personality representing the bank’s AI expertise.'
+ '111:4061':'Case presentation',
+ '111:4062':'We prepared a competition presentation of the assistant case specifically for Behance, briefly bringing together all the work we had done, with a focus on the interface and the AI assistant’s visualization.'
 };
 const extra=Object.fromEntries(Object.entries(en).map(([id,value])=>[copy[id],value]));
 Object.assign(extra,{
- 'Включить видео':'Play video','Команда':'Team','Дата':'Date','Август 2025':'August 2025','Амгалан Дорже, designer ↗':'Amgalan Dorje, designer ↗',
+ 'Включить видео':'Play video','Команда':'Team','Дата':'Date','Август 2025':'August 2025','Амгалан Доржиев, designer ↗':'Amgalan Dorzhiev, designer ↗',
  'Оценила удобство использования существующего интерфейса и сформулировала гипотезы для проверки с пользователями.':'Evaluated the usability of the existing interface and formulated hypotheses to test with users.',
  'Провела пять коридорных тестов с клиентами Альфа-Банка, чтобы понять их самые частые запросы к голосовому помощнику.':'Conducted five hallway tests with Alfa-Bank customers to understand their most frequent requests to the voice assistant.',
  'Интервью с 10 клиентами банка, чтобы выяснить:':'Interviewed 10 bank customers to understand:',

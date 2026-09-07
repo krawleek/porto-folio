@@ -1,13 +1,17 @@
+import {beginAboutReveal} from './about-reveal.js';
+
 export function initAboutDialog() {
   const dialog=document.querySelector('.about-dialog');
   const handle=dialog.querySelector('.about-sheet-handle');
   const scroller=dialog.querySelector('.about-dialog-scroll');
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  let trigger,scrollY=0,closing=false,drag=null,backdropDown=false;
+  let trigger,scrollY=0,closing=false,drag=null,backdropDown=false,cancelReveal,previousOverflow='';
   const announce=open=>document.dispatchEvent(new CustomEvent('about:modal',{detail:{open}}));
   async function close() {
     if(!dialog.open||closing)return;
     closing=true;
+    // Stop pending reveal stages immediately, including a close during the flight.
+    cancelReveal?.();cancelReveal=null;
     if(!reduced.matches){
       const mobile=matchMedia('(max-width:700px)').matches;
       await dialog.animate([{opacity:1,transform:getComputedStyle(dialog).transform},{opacity:0,transform:mobile?'translateY(60px)':'scale(.96)'}],{duration:180,easing:'ease-in',fill:'forwards'}).finished;
@@ -15,11 +19,16 @@ export function initAboutDialog() {
     dialog.close();
   }
   dialog.addEventListener('close',()=>{
+    cancelReveal?.();cancelReveal=null;
     dialog.getAnimations().forEach(a=>a.cancel());
     dialog.style.transform='';
-    document.body.style.position='';document.body.style.top='';document.body.style.width='';
+    document.documentElement.style.overflow=previousOverflow;
     window.scrollTo({top:scrollY,behavior:'instant'});
     closing=false;drag=null;
+    dialog.classList.remove('is-sequencing','is-revealed');
+    dialog.querySelector('.about-dialog-flight')?.remove();
+    document.querySelectorAll('.about-card').forEach(card=>card.style.visibility='');
+    document.querySelectorAll('.about-card-face').forEach(face=>face.getAnimations().forEach(animation=>animation.cancel()));
     announce(false);
     trigger?.focus({preventScroll:true});
   });
@@ -75,15 +84,13 @@ export function initAboutDialog() {
     if(dismiss)close();else dialog.style.transform='';
   }
   scroller.addEventListener('touchend',releaseTouch);scroller.addEventListener('touchcancel',releaseTouch);
-  return {open(source){
+  return {async open(source){
     if(dialog.open)return;
     trigger=source;scrollY=window.scrollY;
     announce(true);
-    document.body.style.position='fixed';document.body.style.top=-scrollY+'px';document.body.style.width='100%';
+    previousOverflow=document.documentElement.style.overflow;
+    document.documentElement.style.overflow='hidden';
     dialog.showModal();scroller.scrollTop=0;
-    if(!reduced.matches){
-      const mobile=matchMedia('(max-width:700px)').matches;
-      dialog.animate([{opacity:0,transform:mobile?'translateY(80px)':'scale(.94)'},{opacity:1,transform:'none'}],{duration:240,easing:'cubic-bezier(.2,.75,.3,1)'});
-    }
+    cancelReveal=beginAboutReveal(dialog,source,reduced);
   }};
 }

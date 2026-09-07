@@ -9,19 +9,23 @@ export function initAboutMotion() {
   const clamp = (n,a=0,b=1) => Math.min(b,Math.max(a,n));
   const ease = n => {n=clamp(n);return n*n*(3-2*n);};
   const mix = (a,b,t) => a+(b-a)*t;
-  let layout, frame=0, dirty=true, frozen=false;
+  let layout, frame=0, dirty=true, frozen=false, hoverIndex=-1;
   function measure() {
     const w = scene.clientWidth, h = scene.clientHeight;
     const narrow = w < 700;
     const width = narrow ? w*.40 : 300*Math.min(w/1440,h/800);
     const height = width*1.4;
     // Centers and rotations follow the three 1440 x 800 Figma compositions.
-    const initial = [[110,810,30],[490,1120,-16],[400,770,-8],[1280,810,20],[700,1170,20],[1240,1280,-16]];
+    // First frame: all six cards peek from the bottom edge.
+    const initialX = [130,360,510,1280,720,1080];
+    const initialAngle = [30,-15,-8,20,12,-14];
     const orbit = [[70,355,20],[290,760,-16],[1410,435,-8],[1290,350,16],[870,770,-16],[500,-35,-16]];
     const fan = [[296,832,-45],[482,725,-30],[607,713,-6],[846,706,7],[1010,725,30],[1145,832,45]];
     const mobileOrbit = [[-.12,.44,20],[.15,.98,-16],[1.08,.60,-8],[1.06,.26,16],[.63,1.04,-16],[.30,-.025,-16]];
     const states = cards.map((_,i)=>({
-      initial:narrow ? [w*[.06,.35,.30,.95,.65,.9][i],h+height*[.05,.8,.02,.08,.8,1][i],initial[i][2]] : [initial[i][0]*w/1440,h+(initial[i][1]-800)*(width/300)-height*.12,initial[i][2]],
+      initial:narrow
+        ? [w*[.08,.22,.38,.92,.56,.82][i], h+height*.18, initialAngle[i]]
+        : [initialX[i]*w/1440, h+height*.18, initialAngle[i]],
       orbit:narrow ? [mobileOrbit[i][0]*w,mobileOrbit[i][1]*h,mobileOrbit[i][2]] : [orbit[i][0]*w/1440,orbit[i][1]*h/800,orbit[i][2]],
       fan:narrow ? [w/2+(i-2.5)*w*.135,h+height*.18-(2.5-Math.abs(i-2.5))*height*.16,fan[i][2]] : [fan[i][0]*w/1440,fan[i][1]*h/800,fan[i][2]],
     }));
@@ -60,6 +64,11 @@ export function initAboutMotion() {
       let x=mix(mix(initial[0],orbit[0],outward),fan[0],inward);
       let y=mix(mix(initial[1],orbit[1],up),fan[1],down);
       let angle=mix(mix(initial[2],orbit[2],first),fan[2],second);
+      if(final&&hoverIndex>=0){
+        if(i<hoverIndex)x-=14;
+        if(i>hoverIndex)x+=14;
+        if(i===hoverIndex)y-=18;
+      }
       x+=Math.sin(time/2100+i*1.7)*7*drift;
       y+=Math.cos(time/2600+i*2.1)*7*drift;
       angle+=Math.sin(time/3100+i)*2*drift;
@@ -88,6 +97,12 @@ export function initAboutMotion() {
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;}else schedule();});
   document.addEventListener('about:modal',e=>{frozen=e.detail.open;if(frozen){cancelAnimationFrame(frame);frame=0;}else refresh();});
   const observer=new ResizeObserver(refresh);copies.forEach(el=>observer.observe(el));
+  cards.forEach((card,i)=>{
+    card.addEventListener('pointerenter',()=>{hoverIndex=i;schedule();});
+    card.addEventListener('pointerleave',()=>{if(hoverIndex===i){hoverIndex=-1;schedule();}});
+    card.addEventListener('focus',()=>{hoverIndex=i;schedule();});
+    card.addEventListener('blur',()=>{if(hoverIndex===i){hoverIndex=-1;schedule();}});
+  });
   refresh();
   return {refresh,toCards(){
     if(reduced.matches)cards[0].focus();

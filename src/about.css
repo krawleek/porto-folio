@@ -2,7 +2,7 @@
 .about-page header{position:fixed}
 .about-language{position:fixed;z-index:11}
 .about-story{height:400svh}
-.about-scene{height:100svh;position:sticky;top:0;overflow:hidden;isolation:isolate}
+.about-scene{height:100svh;position:sticky;top:0;overflow:clip;isolation:isolate}
 .about-scene::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(#9b9b9b 1px,transparent 1px);background-size:30.2px 22px;mask-image:radial-gradient(ellipse at 50% 38%,transparent 23%,#0009 85%)}
 .about-copy{position:absolute;left:50%;top:23.25%;width:min(590px,calc(100% - 40px));text-align:center;transform:translateX(-50%);z-index:2}
 .about-copy h1{font-size:112px;line-height:96px;letter-spacing:-5px;font-weight:500;font-feature-settings:'ss02' 1}
@@ -16,8 +16,9 @@
 .about-card-face{display:block;width:100%;height:100%;position:relative;border-radius:8px;box-shadow:0 16px 36px #1010121f,0 24px 48px #1010120a;transition:transform .25s ease,box-shadow .25s ease}
 .about-card img{display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;user-select:none}
 .about-scene[data-stage="2"] .about-card{pointer-events:auto;cursor:pointer}
+.about-scene[data-stage="2"] .about-card{transition:transform .25s cubic-bezier(.2,.75,.3,1)}
 .about-card:not(:disabled):is(:hover,:focus-visible){z-index:20}
-.about-card:not(:disabled):is(:hover,:focus-visible) .about-card-face{transform:translateY(-16px);box-shadow:0 24px 40px #1010122a}
+.about-card:not(:disabled):is(:hover,:focus-visible) .about-card-face{transform:translateY(-8px);box-shadow:0 24px 40px #1010122a}
 .about-dialog{position:fixed;inset:0;width:min(930px,calc(100% - 80px));max-width:none;max-height:calc(100dvh - 80px);padding:48px 0 0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
 .about-dialog::backdrop{background:#10101299;backdrop-filter:blur(3px)}
 .about-close{position:absolute;right:0;top:0;display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#fff;font-size:14px;line-height:20px;color:var(--text)}
@@ -26,6 +27,14 @@
 .about-dialog-scroll{max-height:calc(100dvh - 128px);overflow:auto;overscroll-behavior:contain;border-radius:16px}
 .about-dialog-content{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:12px;align-items:start}
 .about-dialog-art{display:block;width:100%;max-height:calc(100dvh - 128px);object-fit:contain;object-position:top;border-radius:8px}
+.about-dialog-flight{position:fixed;z-index:5;display:block;border-radius:8px;pointer-events:none;transform-style:preserve-3d}
+.about-dialog-flight img{display:block;width:100%;height:100%;object-fit:contain;object-position:center top;border-radius:8px}
+.flight-front,.flight-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;overflow:hidden}
+.flight-front{background:#f2212b}
+.flight-back{background:#fff;transform:rotateY(180deg)}
+.about-dialog.is-sequencing{overflow:visible}
+.about-dialog.is-sequencing .about-dialog-art{opacity:0}
+.about-dialog.is-sequencing .about-dialog-prose,.about-dialog.is-sequencing .about-close,.about-dialog.is-sequencing .about-posts{opacity:0;pointer-events:none}
 .about-dialog-prose{padding:24px;background:#fff;border-radius:16px}
 .about-dialog h2{margin:0 0 10px;font-size:28px;line-height:32px;font-weight:500;letter-spacing:-1px}
 .about-dialog p{margin:0;font-size:16px;line-height:24px}
