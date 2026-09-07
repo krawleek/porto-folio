@@ -1,14 +1,21 @@
 {
-  "name": "elena-yung-portfolio",
-  "private": true,
+  "name": "porto-folio",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node tests/browser.mjs"
   },
   "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "sharp": "^0.35.4",
     "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "^5.2.0",
+    "@fontsource-variable/geist-mono": "^5.2.0"
   }
 }

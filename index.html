@@ -1,95 +1,16 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Портфолио продуктового дизайнера Елены Юнг" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ru_RU" />
-    <meta property="og:title" content="Елена Юнг — продуктовый дизайнер" />
-    <meta property="og:description" content="Портфолио продуктового дизайнера Елены Юнг" />
-    <meta property="og:image" content="/assets/opengraph.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="Елена Юнг — продуктовый дизайнер" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Елена Юнг — продуктовый дизайнер" />
-    <meta name="twitter:description" content="Портфолио продуктового дизайнера Елены Юнг" />
-    <meta name="twitter:image" content="/assets/opengraph.png" />
-    <title>Елена Юнг — продуктовый дизайнер</title>
-    <link rel="icon" type="image/png" sizes="72x72" href="/assets/favicon.png" />
-    <link rel="preload" href="/fonts/ninactt.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="stylesheet" href="/src/style.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <a class="skip-link" href="#projects">Перейти к проектам</a>
-      <aside class="side-note side-note--left"><b>@krawleek</b><img class="hero-arrow" src="/assets/hero-arrow.svg" alt="" /></aside>
-      <aside class="side-note side-note--right">Обновлено<br>12.07 2026</aside>
-      <img class="scribble" src="/assets/scribble.svg" alt="" />
-
-      <main class="portfolio">
-        <header class="hero panel">
-          <div class="hero__media" aria-hidden="true"></div>
-          <div class="hero__content">
-            <span class="hero__avatar"><img src="/assets/avatar.png" alt="Елена Юнг" /></span>
-            <div class="hero__copy">
-              <h1>Елена Юнг</h1>
-              <p>Продуктовый дизайнер с опытом 5+ лет, работающий со сложными цифровыми системами и финтех-продуктами. В работе фокусируюсь на UX, системном мышлении и влиянии на продуктовые метрики.</p>
-            </div>
-            <div class="actions">
-              <a class="button button--primary" href="mailto:krawleek@yandex.ru" target="_blank">Email me</a>
-              <a class="button" href="https://drive.google.com/file/d/1qsyQjOanp0wfC4tIxmQE_1zLL-KeoP91/view?usp=sharing" target="_blank" rel="noreferrer">see my CV</a>
-            </div>
-          </div>
-        </header>
-
-        <section class="projects" id="projects" aria-label="Избранные проекты">
-          <a class="project-card" href="/projects/nspk" data-project="nspk" data-nda="true" style="--index:0">
-            <div class="project-card__visual project-card__visual--mir"><img src="/assets/project-mir.png" alt="Интерфейс платформы НСПК" width="748" height="356" decoding="async" /><span class="project-card__lock" aria-hidden="true"><img src="/assets/project-lock.svg" alt="" /></span></div>
-            <div class="tags"><span>fintech</span><span>b2b</span></div>
-            <div class="project-card__body"><h2>UX-аудит платформы Национальной Системы Платежных Карт</h2><p>Предложила улучшения B2B-платформы для выпуска карт системы «МИР», которые позволили снизить количество ошибок допускаемых новыми пользователями и подготовить продукт к масштабированию без затрат на ручное обучение.</p></div>
-          </a>
-          <a class="project-card" href="/projects/vtb" data-project="vtb" data-nda="true" style="--index:1">
-            <div class="project-card__visual project-card__visual--vtb"><img src="/assets/project-vtb.png" alt="Личный кабинет ВТБ НПФ" width="748" height="356" loading="lazy" decoding="async" /><span class="project-card__lock" aria-hidden="true"><img src="/assets/project-lock.svg" alt="" /></span></div>
-            <div class="tags"><span>fintech</span><span>b2c</span></div>
-            <div class="project-card__body"><h2>Проектирование личного кабинета клиента ВТБ НПФ</h2><p>Провела редизайн личного кабинета ВТБ НПФ, пересобрала пользовательские сценарии и продуктовую логику для повышения Task Success Rate в платёжных сценариях и заложения основы для роста регулярных взносов.</p></div>
-          </a>
-          <a class="project-card" href="/projects/wasd" data-project="wasd" data-nda="true" style="--index:2">
-            <div class="project-card__visual project-card__visual--wasd"><img src="/assets/project-wasd.png" alt="Онбординг стриминговой платформы WASD" width="748" height="356" loading="lazy" decoding="async" /><span class="project-card__lock" aria-hidden="true"><img src="/assets/project-lock.svg" alt="" /></span></div>
-            <div class="tags"><span>funtech</span><span>b2c</span></div>
-            <div class="project-card__body"><h2>Трансформация онбординга в WASD</h2><p>Разработала систему активации пользователей, трансформировав линейный онбординг в growth-механизм. Это позволило сократить churn rate на ранних этапах и увеличить D7 Retention.</p></div>
-          </a>
-          <a class="project-card" href="/projects/alfa" data-project="alfa" style="--index:3">
-            <div class="project-card__visual project-card__visual--alfa"><img class="alfa-a" src="/assets/project-alfa-a.png" alt="" width="214" height="445" loading="lazy" decoding="async" /><img class="alfa-b" src="/assets/project-alfa-b.png" alt="Концепт ИИ-ассистента Альфа-Банка" width="218" height="440" loading="lazy" decoding="async" /></div>
-            <div class="tags"><span>contest</span><span>ai</span></div>
-            <div class="project-card__body"><h2>ИИ ассистент для Альфа Банка</h2><p>Предложила новый концепт для ИИ-ассистента Альфа 2.0 — проработала interaction-модель, логику персонализации и модель снижения cost-to-serve для массового сегмента.</p></div>
-          </a>
-        </section>
-
-        <section class="experience panel" id="experience" aria-label="Опыт и образование">
-          <div class="experience__row"><strong>Закончила Школу дизайна ВШЭ раз ↗</strong><span>Бакалавриат «Дизайн и продвижение продукта»</span><span class="row-preview row-preview--hse" aria-hidden="true"><img src="/assets/hover-hse.png" alt="" /></span></div>
-          <div><strong>Закончила Школу дизайна ВШЭ два ↗</strong><span>Магистратура «Преподавание дизайна и искусства», диплом «ИИ в дизайне»</span></div>
-          <div class="experience__row"><strong>Выступила с докладом на конференции «Векторы» в Шанинке</strong><span>Представила исследование об ИИ в визуальной культуре</span><span class="row-preview row-preview--vectors" aria-hidden="true"><img src="/assets/hover-vectors.png" alt="" /></span></div>
-          <div><strong>Улучшила навыки в ресерче в USABILITY LAB</strong><span>Курс «UX-исследования»</span></div>
-          <div><strong>Училась управлению продуктом в VK Education</strong><span>Курс «Продакт-менеджмент»</span></div>
-          <div class="experience__row"><strong>Менторила дизайнеров в Women In Tech ↗</strong><span>Делилась знаниями в личной работе и на групповых встречах</span><span class="row-preview row-preview--wit" aria-hidden="true"><img src="/assets/hover-wit.png" alt="" /></span></div>
-        </section>
-
-        <a class="channel panel" href="https://t.me/queeriosity" target="_blank" rel="noreferrer" aria-label="Канал First Drop в Telegram">
-          <img src="/assets/channel-avatar.png" alt="" width="72" height="72" loading="lazy" decoding="async" />
-          <div class="channel__content"><div class="channel__top"><strong><img src="/assets/channel-icon.svg" alt="" /> Веду канал First Drop</strong><span><img src="/assets/channel-read.svg" alt="Прочитано" /> Thu</span></div><div class="channel__message"><p>OpenAI опубликовали «Industrial Policy for the Intelligence Age (https://openai.com/index/industrial-policy-for-the-intelligence-age/)». Этот манифест формулирует предложения того, как именно искусственный интеллект приведет к более справедливому распределению благ, росту благосостояния и расширению возможностей для людей.</p><img class="channel__arrow" src="/assets/channel-next.svg" alt="" /></div></div>
-        </a>
-
-        <section class="contact panel">
-          <h2>Давайте делать сложное&nbsp;проще</h2>
-          <div class="actions actions--contact"><a class="button button--primary" href="mailto:krawleek@yandex.ru" target="_blank">Email me</a><a class="button" href="https://drive.google.com/file/d/1qsyQjOanp0wfC4tIxmQE_1zLL-KeoP91/view?usp=sharing" target="_blank" rel="noreferrer">see my CV</a><a class="button" href="https://www.linkedin.com/in/krawleek/" target="_blank" rel="noreferrer">LinkedIn</a><a class="button" href="https://t.me/krawleek" target="_blank" rel="noreferrer">Telegram</a></div>
-          <div class="contact__image"><img src="/assets/girl_on_computer.gif" alt="Девушка работает за компьютером" width="1080" height="1080" loading="lazy" decoding="async" /></div>
-        </section>
-        <footer>vibecoded by @krawleek in 2026</footer>
-      </main>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html>
+<head><link rel="icon" type="image/png" href="/favicon.png"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f8f8f8"><meta name="description" content="Елена Юнг — продуктовый дизайнер. Проектирование цифровых продуктов, исследования и решение задач бизнеса."><title>Елена Юнг — продуктовый дизайнер</title></head>
+<body>
+<a class="skip" href="#projects">Перейти к проектам</a>
+<header><nav class="desktop-nav" aria-label="Основная навигация"><img class="nav-corner" src="/assets/40-34647-imgSubtract.svg" alt=""><div class="nav-links"><a href="/about/" data-ru="ОБО МНЕ" data-en="ABOUT">ОБО МНЕ</a><a href="#projects" data-ru="ПРОЕКТЫ" data-en="CASES">ПРОЕКТЫ</a><a href="#contacts" data-ru="КОНТАКТЫ" data-en="CONTACTS">КОНТАКТЫ</a></div><img class="nav-corner right" src="/assets/40-34647-imgSubtract1.svg" alt=""></nav><nav class="mobile-nav" aria-label="Мобильная навигация"><img class="nav-corner" src="/assets/40-34647-imgSubtract.svg" alt=""><div class="mobile-panel"><a class="mobile-brand" href="#about">KRAWLEEK</a><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-links" aria-label="Открыть меню"><img src="/assets/menu.svg" alt=""></button><div id="mobile-links" hidden><a href="#projects" data-ru="ПРОЕКТЫ" data-en="CASES">ПРОЕКТЫ</a><a href="/about/" data-ru="ОБО МНЕ" data-en="ABOUT">ОБО МНЕ</a><a href="#contacts" data-ru="КОНТАКТЫ" data-en="CONTACTS">КОНТАКТЫ</a></div></div><img class="nav-corner right" src="/assets/40-34647-imgSubtract1.svg" alt=""></nav><div class="language" aria-label="Язык"><button type="button" data-lang="ru" aria-pressed="true">RU</button><span>/</span><button type="button" data-lang="en" aria-pressed="false">ENG</button></div></header>
+<main>
+<section class="hero" id="about"><h1 data-ru="Елена Юнг" data-en="Elena Jung">Елена Юнг</h1><p data-ru="Дизайнер продуктов с 5-летним опытом поиска и решения проблем. Я опираюсь на исследования и продуктовый подход, чтобы найти вещи, на которые действительно стоит тратить ресурсы." data-en="Product designer with 5 years of experience spotting the right problems before solving them. I use research and product thinking to decide what’s worth fixing — lately in B2C fintech.">Дизайнер продуктов с 5-летним опытом поиска и решения проблем. Я опираюсь на исследования и продуктовый подход, чтобы найти вещи, на которые действительно стоит тратить ресурсы.</p><div class="hero-actions"><button class="button accent" data-email><span data-ru="Моя почта" data-en="Email me">Моя почта</span><img src="/assets/40-34740-imgMail.svg" alt=""></button><a class="button" href="https://drive.google.com/file/d/1qsyQjOanp0wfC4tIxmQE_1zLL-KeoP91/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span data-ru="Резюме" data-en="See my CV">Резюме</span><img src="/assets/40-34740-imgFile.svg" alt=""></a></div></section>
+<section id="projects" class="projects" aria-label="Избранные проекты"></section>
+<section id="contacts" class="contact"><div class="contact-art" role="button" tabindex="0" aria-label="Удерживайте, чтобы раскрутить карточку"><img draggable="false" src="/assets/44-36668-imgCard.svg" alt="" class="tilt-card"></div><div class="contact-copy"><h2 data-ru="Давайте решать проблемы вместе" data-en="Have a problem worth solving?">Давайте решать проблемы вместе</h2><button class="button accent" data-email><span data-ru="Напишите мне" data-en="Email me">Напишите мне</span><img src="/assets/44-36668-imgMail.svg" alt=""></button></div></section>
+</main>
+<footer><div class="footer-inner"><div class="credit"><p data-ru="ЗАВАЙБКОЖЕНО @KRAWLEEK В 2026" data-en="VIBECODED BY @KRAWLEEK IN 2026">ЗАВАЙБКОЖЕНО @KRAWLEEK В 2026</p><a href="/about/" data-ru="КТО ЕСТЬ KRAWLEEK?" data-en="WHO IS KRAWLEEK?">КТО ЕСТЬ KRAWLEEK?</a></div><div class="footer-projects"><p data-ru="КЕЙСЫ" data-en="CASES">КЕЙСЫ</p><a href="#nspk" data-project="1" data-ru="АУДИТ ПЛАТФОРМЫ НСПК" data-en="CPVT PLATFORM AUDIT">АУДИТ ПЛАТФОРМЫ НСПК</a><a href="#vtb" data-project="0" data-ru="РЕДИЗАЙН КАБИНЕТА ВТБ НПФ" data-en="VTB NPF PORTAL REDESIGN">РЕДИЗАЙН КАБИНЕТА ВТБ НПФ</a><a href="#alfa" data-project="2" data-ru="ИИ АССИСТЕНТ АЛЬФА БАНКА" data-en="ALFA BANK AI ASSISTANT">ИИ АССИСТЕНТ АЛЬФА БАНКА</a><a href="#wasd" data-project="3" data-ru="ОНБОРДИНГ В WASD" data-en="WASD ONBOARDING">ОНБОРДИНГ В WASD</a></div><div class="socials"><p data-ru="ССЫЛКИ" data-en="LINKS">ССЫЛКИ</p><a href="https://www.linkedin.com/in/krawleek/" target="_blank" rel="noopener noreferrer">LINKED.IN</a><a href="https://instagram.com/krawleek" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="https://www.behance.net/krawleek" target="_blank" rel="noopener noreferrer">BEHANCE</a><a href="https://t.me/krawleek" target="_blank" rel="noopener noreferrer">TELEGRAM</a></div></div></footer>
+<dialog id="sheet" aria-labelledby="sheet-title"><div class="sheet-handle"></div><button class="close" aria-label="Закрыть" type="button">×</button><img class="lock-icon" src="/assets/lock.svg" alt=""><h2 id="sheet-title">Кейс спрятан под паролем</h2><div class="sheet-content"></div></dialog>
+<dialog id="case-dialog" aria-labelledby="case-title"><button class="close" aria-label="Закрыть" type="button">×</button><h2 id="case-title"></h2><p id="case-description"></p><p class="case-note">Полный кейс можно запросить по почте.</p><a class="button accent" href="mailto:krawleek@yandex.ru">krawleek@yandex.ru</a></dialog>
+<div class="toast" role="status" aria-live="polite"></div><script type="module" src="/src/main.js"></script>
+</body></html>

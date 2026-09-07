@@ -1,0 +1,11 @@
+import './alfa.css';
+import './vtb.css';
+import {content} from './vtb-content.js';
+import {initCaseMenu} from './case-menu.js';
+import {initCaseShowcases} from './case-showcase.js';
+import {initCaseCarousel} from './case-carousel.js';
+document.querySelector('#case-root').innerHTML=content;
+initCaseMenu();
+initCaseShowcases();
+initCaseCarousel(document.querySelector('.carousel'));
+await import('./vtb-language.js');
