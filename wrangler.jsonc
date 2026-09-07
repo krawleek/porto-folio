@@ -1,6 +1,9 @@
 {
   "name": "porto-folio",
   "compatibility_date": "2026-09-07",
+  "build": {
+    "command": "npm run build"
+  },
   "assets": {
     "directory": "./dist"
   }
