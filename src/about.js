@@ -1,142 +1,82 @@
+import {language} from './page-language.js';
+import './smooth-scroll.js';
 import '@fontsource-variable/geist';
 import '@fontsource-variable/geist-mono';
-import './style.css';
+import './main.css';
 import './about.css';
-import {caseHeader} from './case-shell.js';
-import {initCaseMenu} from './case-menu.js';
-import {topics} from './about-data.js';
-import {initAboutMotion} from './about-motion.js';
-import {initAboutDialog} from './about-dialog.js';
+import {mountBilliards} from './billiards.js';
+import './background-interactions.js';
+import {enableBoardDrag} from './board-drag.js';
 
-const english = [
-  ['Mentoring', 'I mentor early-career designers through Women in Tech, a programme I once joined as a mentee. Helping others grow matters to me, so I also take on mentoring and professional development responsibilities within my teams.'],
-  ['Challenges', 'I enjoy situations where I need to learn something new quickly, so I regularly take part in hackathons and design competitions. The Telegram competition pushed me to explore UI animation in After Effects, and I won the Alfa Bank competition on my third attempt.'],
-  ['Photography', 'I take photographs and explore street and documentary photography. Lately, I have been trying new formats: shooting on Polaroid and being photographed myself to better understand the experience on the other side of the lens.'],
-  ['Thoughts into words', 'For the past two years, I have run a Telegram channel about the systems behind everyday things and how technology, products, culture and economics shape our behaviour. Together with 600+ readers, I question what seems obvious and explore why familiar things work the way they do. Here are a few posts to start with:'],
-  ['Education', 'I graduated from the HSE School of Design, part of a university ranked among the world’s top 200 in QS. Its project-based approach taught me to see design beyond the interface: combining research, systems thinking and product development to tackle real industry challenges.'],
-  ['Research', 'My interest in research goes beyond UX. I have studied the impact of AI on the creative industries, presented my work at academic conferences, and explored Responsible AI as an approach to developing technology.'],
-];
-topics.forEach((topic, i) => { topic.en = {title: english[i][0], body: english[i][1]}; });
-const asset = id => '/assets/about/'+id+({research:'.jpg',challenges:'.png',photography:'.png',education:'.png'}[id]||'.webp');
-const posts = [
-  {id:'ai', url:'450', ru:'Прочитала D&AD AI & Creativity Report', en:'Reading the D&AD AI & Creativity Report'},
-  {id:'enshittification', url:'448', ru:'Дерьмофикация как бизнес-модель', en:'Enshittification as a business model'},
-  {id:'shopping', url:'412', ru:'Эпоха shopper-tainment', en:'The age of shopper-tainment'},
-  {id:'museum', url:'431', ru:'Музей плохого искусства', en:'The Museum of Bad Art'},
-];
-const copy = {
-  ru: {
-    name:'Елена Юнг',
-    intro:'Дизайнер продуктов с 5-летним опытом поиска и решения проблем. Я опираюсь на исследования и продуктовый подход, чтобы найти вещи, на которые действительно стоит тратить ресурсы.',
-    curiosity:'В мире, где все решают проблемы, мне интереснее их находить',
-    approach:'Моя сильная сторона — любопытство. Я ставлю под сомнение очевидное, разбираюсь, как всё устроено, и ищу то, что другие могли не заметить.',
-    beyond:'Вне работы',
-    interests:'Любопытство определяет не только то, как я работаю, но и то, как учусь, преподаю и исследую новое. Здесь — проекты, эксперименты и интересы, которые сформировали меня как дизайнера и которыми я занимаюсь сейчас.',
-    cv:'Резюме', email:'Моя почта', telegram:'Телеграм', skip:'К карточкам', close:'Закрыть', copied:'Почта скопирована', about:'ОБО МНЕ', cases:'ПРОЕКТЫ', contacts:'КОНТАКТЫ',
-  },
-  en: {
-    name:'Elena Jung',
-    intro:'Product designer with 5 years of experience spotting the right problems before solving them. I use research and product thinking to decide what’s worth fixing — lately in B2C fintech.',
-    curiosity:'In a world of problem solvers, I’m more interested in finding problems',
-    approach:'Curiosity is my strength. I question the obvious, explore how things work, and look for what others may have missed.',
-    beyond:'Beyond the day job',
-    interests:'Curiosity shapes how I work, learn, teach, and explore beyond my day-to-day projects. Here are a few things that have shaped the designer I am today — and what I’m exploring next.',
-    cv:'See my CV', email:'Email me', telegram:'Telegram', skip:'Explore the cards', close:'Close', copied:'Email copied', about:'ABOUT', cases:'CASES', contacts:'CONTACTS',
-  },
-};
-const icon = name => '<img src="/assets/about/324-47132-img'+name+'.svg" alt="">';
-const emailButton = () => '<button class="button accent" data-email><span data-copy="email"></span>'+icon('Mail')+'</button>';
-const social = (label,url) => '<a class="button accent" href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+icon('Share')+'</a>';
-document.querySelector('#about-root').innerHTML = caseHeader + `
-  <div class="language about-language" aria-label="Язык / Language"><button data-lang="ru" aria-pressed="true">RU</button><span>/</span><button data-lang="en" aria-pressed="false">ENG</button></div>
-  <a class="skip about-skip" href="#interests" data-copy="skip"></a>
-  <main class="about-story">
-    <div class="about-scene">
-      <section class="about-copy about-intro" data-state="0">
-        <h1 data-copy="name"></h1><p data-copy="intro"></p>
-        <div class="about-actions"><a class="button" href="https://drive.google.com/file/d/1qsyQjOanp0wfC4tIxmQE_1zLL-KeoP91/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span data-copy="cv"></span>${icon('File')}</a>${emailButton()}${social('<span data-copy="telegram"></span>','https://t.me/krawleek')}</div>
-      </section>
-      <section class="about-copy about-curiosity" data-state="1" aria-hidden="true" inert>
-        <h2 data-copy="curiosity"></h2><p data-copy="approach"></p>
-      </section>
-      <section class="about-copy about-interests" id="interests" data-state="2" aria-hidden="true" inert>
-        <h2 data-copy="beyond"></h2><p data-copy="interests"></p>
-        <div class="about-actions">${emailButton()}${social('LinkedIn','https://www.linkedin.com/in/krawleek/')}${social('Telegram','https://t.me/krawleek')}</div>
-      </section>
-      <div class="about-cards" aria-label="Интересы / Interests">
-        ${topics.map((topic,i)=>`<button class="about-card" data-topic="${topic.id}" aria-haspopup="dialog" tabindex="-1" disabled style="--card-order:${i}"><span class="about-card-face"><img src="${asset(topic.id)}" alt="" draggable="false"></span></button>`).join('')}
-      </div>
-    </div>
-  </main>
-  <dialog class="about-dialog" aria-labelledby="about-dialog-title">
-    <div class="about-sheet-handle" aria-hidden="true"><span></span></div>
-    <button class="about-close" type="button" autofocus><img src="/assets/about/324-53483-imgClose.svg" alt=""></button>
-    <div class="about-dialog-scroll"><div class="about-dialog-content"></div></div>
-  </dialog>
-  <div class="toast" role="status" aria-live="polite"></div>
-`;
-initCaseMenu();
-let lang = 'ru';
-const modal = initAboutDialog();
-const motion = initAboutMotion();
-function setLanguage(next) {
-  lang = next;
-  document.documentElement.lang = lang;
-  document.title = lang === 'ru' ? 'Обо мне — Елена Юнг' : 'About — Elena Jung';
-  document.querySelectorAll('[data-copy]').forEach(el => {el.textContent = copy[lang][el.dataset.copy];});
-  document.querySelectorAll('[data-lang]').forEach(el => el.setAttribute('aria-pressed', String(el.dataset.lang === lang)));
-  document.querySelectorAll('header a:not(.mobile-brand)').forEach(el => {
-    const key = el.getAttribute('href') === '/about/' ? 'about' : el.hash === '#projects' ? 'cases' : 'contacts';
-    el.textContent = copy[lang][key];
-    if (key === 'about') el.setAttribute('aria-current','page');
-  });
-  topics.forEach(topic => {
-    const card = document.querySelector('[data-topic="'+topic.id+'"]');
-    card.setAttribute('aria-label',topic[lang].title);
-
-  });
-  document.querySelector('.about-close').setAttribute('aria-label',copy[lang].close);
-  motion.refresh();
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],en=language==='en';
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+const board=$('.about-board'),svg=$('.connectors');
+function drawConnectors(){
+ if(innerWidth<1100)return;
+ const b=board.getBoundingClientRect();
+ const point=(selector,side)=>{const r=$(selector).getBoundingClientRect();return {x:(side==='right'?r.right:r.left)-b.left,y:r.top+r.height/2-b.top};};
+ const root=point('.profile','right'),about=point('.about-link','left'),aboutEnd=point('.about-link','right'),work=point('.projects-link','left'),photo=point('.cat-photo','left');
+ const curves=[`M${root.x},${root.y} C${root.x+75},${root.y} ${about.x-80},${about.y} ${about.x},${about.y}`,`M${root.x},${root.y} C${root.x+90},${root.y} ${work.x-80},${work.y} ${work.x},${work.y}`,`M${aboutEnd.x},${aboutEnd.y} C${aboutEnd.x+100},${aboutEnd.y} ${photo.x-90},${photo.y} ${photo.x},${photo.y}`];
+ svg.setAttribute('viewBox',`0 0 ${b.width} ${b.height}`);svg.innerHTML=curves.map(d=>`<path d="${d}"/>`).join('')+[root,about,aboutEnd,work,photo].map(p=>`<circle cx="${p.x}" cy="${p.y}" r="2.5"/>`).join('');
 }
-document.querySelectorAll('[data-lang]').forEach(el => el.addEventListener('click',() => setLanguage(el.dataset.lang)));
-document.querySelectorAll('[data-topic]').forEach(card => card.addEventListener('click',() => {
-  const topic = topics.find(item => item.id === card.dataset.topic);
-  const text = topic[lang];
-  const content = document.querySelector('.about-dialog-content');
-  content.classList.toggle('is-writing', topic.id === 'writing');
-  content.classList.toggle('is-photography', topic.id === 'photography');
-  // Text comes from the local copy data; use textContent for prose.
-  content.replaceChildren();
-  if (topic.id !== 'writing') {
-    const img = document.createElement('img'); img.className = 'about-dialog-art'; img.src = asset(topic.id); img.alt = text.title;
-    content.append(img);
-  }
-  const prose = document.createElement('div'); prose.className = 'about-dialog-prose';
-  const heading = document.createElement('h2'); heading.id = 'about-dialog-title'; heading.textContent = text.title;
-  const body = document.createElement('p'); body.textContent = text.body;
-  prose.append(heading,body); content.append(prose);
-  if (topic.id === 'writing') {
-    const list = document.createElement('div'); list.className = 'about-posts';
-    posts.forEach(post => {
-      const a = document.createElement('a'); a.href = 'https://t.me/eenache/'+post.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
-      const title = document.createElement('h3'); title.textContent = post[lang];
-      const img = document.createElement('img'); img.src = '/assets/about/post-'+post.id+'.webp'; img.alt = '';
-      a.append(title,img); list.append(a);
-    });
-    content.append(list);
-  }
-  modal.open(card);
-}));
+const connectorObserver=new ResizeObserver(drawConnectors);
+[board,$('.profile')].forEach(element=>connectorObserver.observe(element));document.fonts.ready.then(drawConnectors);
 let toastTimer;
-document.querySelectorAll('[data-email]').forEach(button => button.addEventListener('click',async () => {
-  try {
-    await navigator.clipboard.writeText('krawleek@yandex.ru');
-    const toast = document.querySelector('.toast'); toast.textContent = copy[lang].copied; toast.classList.add('visible');
-    clearTimeout(toastTimer); toastTimer = setTimeout(()=>toast.classList.remove('visible'),2400);
-  } catch { location.href = 'mailto:krawleek@yandex.ru'; }
-}));
-document.querySelector('.about-skip').addEventListener('click',e => {e.preventDefault();motion.toCards();});
-setLanguage(lang);
-document.fonts.ready.then(()=>motion.refresh());
+function notify(text){$('.toast').textContent=text;$('.toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('.toast').classList.remove('visible'),2800);}
+$('[data-email]').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('krawleek@yandex.ru');notify(en?'Email copied: krawleek@yandex.ru':'Почта скопирована: krawleek@yandex.ru');}catch{location.href='mailto:krawleek@yandex.ru';}});
+function setFact(button,open){button.setAttribute('aria-expanded',String(open));document.getElementById(button.getAttribute('aria-controls')).hidden=!open;}
+function closeFacts(except){$$('[data-fact]').forEach(button=>{if(button!==except)setFact(button,false);});}
+$$('[data-fact]').forEach(button=>{
+ const item=button.closest('.fact-item'),note=document.getElementById(button.getAttribute('aria-controls'));
+ const hover=['education','mentoring','challenges'].includes(button.dataset.fact);
+ function follow(event){
+  if(!hover||event.pointerType!=='mouse')return;
+  closeFacts(button);setFact(button,true);note.classList.add('cursor-note');
+  const x=Math.min(event.clientX+14,innerWidth-note.offsetWidth-12),y=Math.min(event.clientY+20,innerHeight-note.offsetHeight-12);
+  note.style.setProperty('--note-x',`${Math.max(12,x)}px`);note.style.setProperty('--note-y',`${Math.max(12,y)}px`);
+ }
+ button.addEventListener('pointerenter',follow);button.addEventListener('pointermove',follow);
+ button.addEventListener('pointerleave',event=>{if(hover&&event.pointerType==='mouse'){setFact(button,false);note.classList.remove('cursor-note');}});
+ button.addEventListener('click',event=>{if(button.dataset.dragged==='true'){button.dataset.dragged='false';return;}if(hover&&event.pointerType==='mouse')return;note.classList.remove('cursor-note');const open=button.getAttribute('aria-expanded')!=='true';closeFacts(button);setFact(button,open);});
+ button.addEventListener('focus',()=>{if(!button.matches(':focus-visible'))return;note.classList.remove('cursor-note');closeFacts(button);setFact(button,true);});
+ button.addEventListener('blur',()=>setFact(button,false));
+});
+document.addEventListener('pointerdown',event=>{if(!event.target.closest('.fact-item'))closeFacts();});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeFacts();closeMessage();}});
 
-import('./background-interactions.js');
+enableBoardDrag(board,'.education-fact .fact-trigger, .mentoring-fact .fact-trigger, .challenge-fact .fact-trigger, .photo, .writing-icons, .p5-mark, .about-link, .projects-link, .photography-copy, .post, .ball-play, .message-invite, .trophy',drawConnectors);
+const sticker=$('.home-sticker .fact-trigger');sticker.setAttribute('aria-describedby','sticker-help');
+let drag=null,offset={x:0,y:0};
+function placeSticker(x,y){const base=$('.home-sticker').getBoundingClientRect(),area=board.getBoundingClientRect();offset={x:Math.max(area.left-base.left,Math.min(x,area.right-base.left-sticker.offsetWidth)),y:Math.max(area.top-base.top,Math.min(y,area.bottom-base.top-sticker.offsetHeight))};for(const [axis,value] of Object.entries(offset))$('.home-sticker').style.setProperty(`--drag-${axis}`,`${value}px`);}
+sticker.addEventListener('pointerdown',event=>{if(event.button!==0)return;drag={id:event.pointerId,startX:event.clientX,startY:event.clientY,x:offset.x,y:offset.y,active:false};sticker.setPointerCapture(event.pointerId);});
+sticker.addEventListener('pointermove',event=>{if(!drag||drag.id!==event.pointerId)return;const dx=event.clientX-drag.startX,dy=event.clientY-drag.startY;if(!drag.active){if(Math.hypot(dx,dy)<8)return;if(event.pointerType==='touch'&&Math.abs(dy)>Math.abs(dx)){drag=null;return;}drag.active=true;closeFacts();sticker.classList.add('is-dragging');}placeSticker(drag.x+dx,drag.y+dy);});
+function release(){if(drag?.active)sticker.dataset.dragged='true';sticker.classList.remove('is-dragging');drag=null;}
+sticker.addEventListener('pointerup',release);sticker.addEventListener('pointercancel',release);sticker.addEventListener('lostpointercapture',release);
+sticker.addEventListener('keydown',event=>{const directions={ArrowLeft:[-12,0],ArrowRight:[12,0],ArrowUp:[0,-12],ArrowDown:[0,12]};if(directions[event.key]){event.preventDefault();const [x,y]=directions[event.key];placeSticker(offset.x+x,offset.y+y);}if(event.key==='Escape')placeSticker(0,0);});
+addEventListener('resize',()=>placeSticker(0,0));
+
+const viewer=$('.photo-viewer');let photoTrigger;
+$$('[data-photo]').forEach(button=>button.addEventListener('click',()=>{photoTrigger=button;const target=viewer.querySelector('img');target.src=button.querySelector('img').src;target.alt=button.getAttribute('aria-label');viewer.showModal();}));
+viewer.querySelector('.close').addEventListener('click',()=>viewer.close());
+viewer.addEventListener('click',event=>{if(event.target===viewer){const r=viewer.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)viewer.close();}});
+viewer.addEventListener('close',()=>photoTrigger?.focus({preventScroll:true}));
+
+const toggle=$('.message-toggle'),form=$('#message-form');
+function closeMessage(){form.hidden=true;toggle.setAttribute('aria-expanded','false');}
+toggle.addEventListener('click',()=>{const open=form.hidden;form.hidden=!open;toggle.setAttribute('aria-expanded',String(open));if(open)$('#message').focus({preventScroll:true});});
+document.addEventListener('pointerdown',event=>{if(!event.target.closest('.message-invite'))closeMessage();});
+form.addEventListener('submit',async event=>{
+ event.preventDefault();if(!form.reportValidity())return;
+ const message=$('#message').value.trim();if(!message)return;
+ const send=form.querySelector('.message-send'),status=form.querySelector('.message-status');send.disabled=true;status.textContent=en?'Sending…':'Отправляю…';
+ try{
+  const response=await fetch('/api/letters',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message,language,website:form.elements.website.value})});
+  if(!response.ok)throw new Error(response.status===429?'rate':'server');
+  const result=await response.json();if(!result.ok)throw new Error('server');
+  form.reset();status.textContent=en?'Message sent. Thank you!':'Сообщение отправлено. Спасибо!';
+ }catch(error){status.textContent=error.message==='rate'?(en?'Please wait a minute before sending again.':'Подождите минуту перед следующим сообщением.'):(en?'Could not send. Your text is saved here; please try again.':'Не удалось отправить. Текст сохранён в поле — попробуйте ещё раз.');}
+ finally{send.disabled=false;}
+});
+form.addEventListener('keydown',event=>{if((event.metaKey||event.ctrlKey)&&event.key==='Enter'){event.preventDefault();form.requestSubmit();}});
+
+mountBilliards(en);

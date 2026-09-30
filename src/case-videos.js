@@ -13,7 +13,7 @@ export function initCaseVideos(){
    else {video.pause();if(reduce.matches&&!manual)container.classList.add('video-unavailable');}
   }
   button.addEventListener('click',()=>{manual=true;play();});
-  video.addEventListener('playing',()=>container.classList.remove('video-unavailable'));
+  video.addEventListener('playing',()=>{container.classList.remove('video-unavailable');container.classList.add('video-ready');});
   video.addEventListener('error',()=>container.classList.add('video-unavailable'));
   new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;update();},{rootMargin:'150px 0px'}).observe(container);
   document.addEventListener('visibilitychange',update);reduce.addEventListener('change',update);

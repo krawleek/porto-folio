@@ -1,14 +1,14 @@
 import {initCaseShowcases} from './case-showcase.js';
+import './smooth-scroll.js';
 import '@fontsource-variable/geist';
 import '@fontsource-variable/geist-mono';
 import './style.css';
 import './nspk.css';
 import './alfa.css';
-import {content} from './alfa-content.js';
+import {mountCase} from './page-language.js';
 import {initCaseVideos} from './case-videos.js';
 import {initCaseMenu} from './case-menu.js';
-document.querySelector('#case-root').innerHTML=content;
+mountCase();
 initCaseMenu();
 initCaseVideos();
 initCaseShowcases();
-await import('./alfa-language.js');

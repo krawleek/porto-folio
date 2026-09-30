@@ -1,3 +1,14 @@
 import {defineConfig} from 'vite';
+import {lettersApi} from './server/letters.js';
 import {fileURLToPath} from 'node:url';
-export default defineConfig({build:{rollupOptions:{input:{about:fileURLToPath(new URL('./about/index.html',import.meta.url)),wasd:fileURLToPath(new URL('./cases/wasd/index.html',import.meta.url)),vtb:fileURLToPath(new URL('./cases/vtb/index.html',import.meta.url)),alfa:fileURLToPath(new URL('./cases/alfa/index.html',import.meta.url)),main:fileURLToPath(new URL('./index.html',import.meta.url)),nspk:fileURLToPath(new URL('./cases/nspk/index.html',import.meta.url))}}}});
+
+const pages=['index.html','about/index.html',...['alfa','nspk','vtb','wasd'].map(id=>'cases/'+id+'/index.html')];
+const inputs=[...pages,...['ru','en'].flatMap(lang=>pages.map(page=>lang+'/'+page))];
+export default defineConfig({
+  plugins:[{name:"private-letters",configureServer(server){server.middlewares.use(lettersApi());}}],
+  build:{
+    rollupOptions:{
+      input:Object.fromEntries(inputs.map(page=>[page.replaceAll('/','-'),fileURLToPath(new URL('./'+page,import.meta.url))]))
+    }
+  }
+});

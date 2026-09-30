@@ -1,7 +1,8 @@
 import {initCaseCarousel} from './case-carousel.js';
+import './smooth-scroll.js';
 import {initCaseMenu} from "./case-menu.js";
-import {content} from './nspk-content.js';
-document.querySelector('#case-root').innerHTML=content;
+import {mountCase} from './page-language.js';
+mountCase();
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 initCaseMenu();
 
@@ -15,6 +16,3 @@ $$('.comparison').forEach(comparison=>{
  input.addEventListener('pointermove',e=>{if(pointer===e.pointerId)fromPointer(e);});
  const release=()=>pointer=null;input.addEventListener('pointerup',release);input.addEventListener('pointercancel',release);input.addEventListener('lostpointercapture',release);
 });
-
-const {initCaseLanguage}=await import("./nspk-language.js");
-initCaseLanguage();

@@ -8,9 +8,9 @@ const hero=document.querySelector('.hero');
 const reduced=matchMedia('(prefers-reduced-motion:reduce)');
 const paths=[];
 let drawing=false,last=null,path=null,photoIndex=0,travel=0,trailLast=null,queued=false;
-const selectors='h1,h2,h3,p,a,button,input,textarea,select,label,img,svg,video,[role="button"],.project,.contact-art,.nav-links,.mobile-panel,.language,footer,dialog[open],.password-form';
+const selectors='.profile,[data-draggable],.fact-note,.site-loader,.message-form,h1,h2,h3,p,a,button,input,textarea,select,label,img,svg,video,[role="button"],.project,.contact-art,.nav-links,.mobile-panel,.language,footer,dialog[open],.password-form';
 function exclusions(){
- return [...document.querySelectorAll(selectors)].filter(el=>!el.closest('.photo-trail,[aria-hidden="true"],.about-copy[inert]')&&el.getClientRects().length).map(el=>el.getBoundingClientRect()).filter(r=>r.width&&r.height&&r.bottom>=0&&r.top<=innerHeight).map(r=>({left:r.left-4,top:r.top-4,right:r.right+4,bottom:r.bottom+4}));
+ return [...document.querySelectorAll(selectors)].filter(el=>!el.matches('.connectors,.connectors *')&&!el.closest('.photo-trail,.about-copy[inert]')&&el.getClientRects().length).map(el=>el.getBoundingClientRect()).filter(r=>r.width&&r.height&&r.bottom>=0&&r.top<=innerHeight).map(r=>({left:r.left-4,top:r.top-4,right:r.right+4,bottom:r.bottom+4}));
 }
 const inside=(p,r)=>p.x>=r.left&&p.x<=r.right&&p.y>=r.top&&p.y<=r.bottom;
 function free(p,rects){

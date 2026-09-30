@@ -2,4 +2,31 @@
 @media(max-width:1100px){.showcase-copy h2{font-size:38px;line-height:40px}.showcase-copy .case-lead{font-size:26px;line-height:30px}.alfa-articles{gap:16px}.alfa-article-copy{padding:20px}.alfa-gallery{gap:10px}.alfa-research{gap:24px;grid-template-columns:2fr 1fr}}
 @media(max-width:700px){.alfa-main .alfa-subheading{font-size:24px;line-height:28px}.alfa-research{grid-template-columns:1fr}.alfa-notes{gap:16px}.alfa-notes article{font-size:16px;line-height:22px;gap:10px;padding:16px;border-radius:16px}.alfa-video{border-radius:12px}.showcase-sticky{top:64px;height:calc(100svh - 80px);max-height:none;grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);gap:20px}.showcase-copy h2{font-size:28px;line-height:30px;margin-bottom:16px;max-width:350px}.showcase-copy .case-lead{font-size:18px;line-height:22px}.showcase-dots{margin-bottom:8px;height:16px}.showcase-screen{height:100%;min-height:0;border-radius:16px}.showcase-descriptions{min-height:88px;max-width:none}.alfa-gallery{display:flex;overflow-x:auto;gap:16px;padding:16px;scroll-snap-type:x proximity}.alfa-gallery img{flex:0 0 140px;width:140px;scroll-snap-align:start}.alfa-results{grid-template-columns:1fr 1fr;gap:32px 20px}.alfa-results h3{font-size:48px;line-height:48px}.alfa-articles{grid-template-columns:1fr}.alfa-article-image{height:230px}.alfa-more{padding-bottom:32px}}
 @media(prefers-reduced-motion:reduce){.showcase{height:auto}.showcase-sticky{position:static;height:auto;max-height:none}.showcase-descriptions{gap:24px}.showcase-step{grid-area:auto;opacity:1;visibility:visible;transform:none;transition:none}.showcase-screen{display:flex;flex-direction:column;gap:24px;height:auto;padding:24px}.showcase-image{position:static;height:400px;opacity:1;visibility:visible;transform:none;transition:none}.showcase-dots{display:none}.alfa-article{transition:none}.alfa-article:hover{transform:none}}
-.video-fallback{display:none;position:absolute;right:16px;bottom:16px;border-radius:20px;padding:8px 16px;background:#101012;color:#fff;font-size:14px}.video-unavailable .video-fallback{display:block}.video-fallback:hover{background:#353538}
+.video-fallback{display:none;position:absolute;right:16px;bottom:16px;z-index:3;border-radius:20px;padding:8px 16px;background:#101012;color:#fff;font-size:14px}.video-unavailable .video-fallback{display:block}.video-fallback:hover{background:#353538}.alfa-video video{z-index:1}.video-poster{position:absolute;inset:0;z-index:2;width:100%;height:100%;object-fit:cover;transition:opacity .2s ease}.video-ready .video-poster{opacity:0;pointer-events:none}
+.alfa-main .case-intro .case-lead{max-width:873px;font-size:20px;line-height:20px;letter-spacing:-.33px;color:#757575}.alfa-main .alfa-insight .case-lead,.alfa-main .alfa-result-copy{font-size:24px;line-height:24px;letter-spacing:-.5px}
+.alfa-research-heading{margin-bottom:-48px}
+.alfa-main .alfa-research-heading h2{margin-bottom:0}
+.alfa-main .showcase-copy{padding-top:0}
+.alfa-main .showcase-copy .case-lead{font-size:24px;line-height:24px;letter-spacing:-.5px}
+.alfa-award{display:grid;grid-template-columns:538fr 764fr;gap:18px}
+.alfa-award-copy{display:flex;flex-direction:column;justify-content:space-between;gap:32px;min-width:0}
+.alfa-award-details{display:flex;flex-direction:column;gap:24px}
+.alfa-award-details>.case-lead{max-width:425px}
+.alfa-award-art{position:relative;aspect-ratio:764/742;background:#f7f7f7;border-radius:20px;overflow:hidden}
+.alfa-award-art img{position:absolute;width:72.775%;height:auto;left:13.6125%;top:9.25%}
+.alfa-award-art:after{content:'';position:absolute;left:51.832%;top:46.174%;width:17.54%;height:2.022%;background:#faf9ff}
+.alfa-main .alfa-more>h2{font-size:64px;line-height:64px;letter-spacing:-3px}
+@media(min-width:1101px){
+ .alfa-main .case-meta{grid-template-columns:201fr 428fr 431fr 200fr}
+ .alfa-main .case-meta>div:nth-child(n){grid-column:auto;grid-row:auto}
+ .alfa-main .case-meta>div:nth-child(2) dd{margin-top:6px;min-height:52px}
+}
+@media(max-width:1100px){.alfa-award{grid-template-columns:1fr 1fr}.alfa-award-art{align-self:center}}
+@media(max-width:700px){
+ .alfa-research-heading{margin-bottom:-24px}
+ .alfa-main .showcase-copy .case-lead{font-size:18px;line-height:22px}
+ .alfa-award{grid-template-columns:1fr;gap:24px}
+ .alfa-award-copy{gap:4px}
+ .alfa-main .alfa-more>h2{font-size:30px;line-height:32px;letter-spacing:-1px}
+}
+@media(max-width:700px){.alfa-main .case-intro .case-lead{font-size:16px;line-height:20px;letter-spacing:-.25px}.alfa-main .alfa-insight .case-lead,.alfa-main .alfa-result-copy{font-size:20px;line-height:24px;letter-spacing:-.33px}}

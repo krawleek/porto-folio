@@ -1,0 +1,21 @@
+/* Loaded in the head: the incoming document stays covered before app CSS arrives. */
+html{background:#f5f5f7}
+html::after{content:'';position:fixed;inset:0;z-index:2000;background:#f5f5f7;opacity:0;pointer-events:none;transition:opacity 240ms ease-in-out}
+html.language-enter::after,html.language-leave::after{opacity:1;pointer-events:auto}
+html.language-enter::after{transition:none}
+@media(prefers-reduced-motion:reduce){html::after{transition:none}}
+html.is-loading:not(.loader-mounted)::before{content:'';position:fixed;inset:0;background:#101012;z-index:1000}
+/* Never paint the cover until the card layout and clipping styles are ready. */
+.profile-cover{visibility:hidden}
+.portfolio-page .profile{view-transition-name:profile-card}
+.portfolio-page .about-link{view-transition-name:about-node}
+.portfolio-page .projects-link{view-transition-name:work-node}
+.portfolio-page .map-header{view-transition-name:portfolio-header}
+::view-transition-group(*){animation-duration:280ms;animation-timing-function:cubic-bezier(.22,1,.36,1)}
+::view-transition-old(profile-card),::view-transition-old(about-node),::view-transition-old(work-node),::view-transition-old(portfolio-header){display:none}
+::view-transition-new(profile-card),::view-transition-new(about-node),::view-transition-new(work-node),::view-transition-new(portfolio-header){animation:none;opacity:1;mix-blend-mode:normal}
+::view-transition-old(root){animation:board-content-out 180ms ease both}
+::view-transition-new(root){animation:board-content-in 280ms ease both}
+@keyframes board-content-out{to{opacity:0}}
+@keyframes board-content-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
