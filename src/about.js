@@ -10,20 +10,23 @@ import {enableBoardDrag} from './board-drag.js';
 
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],en=language==='en';
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-const board=$('.about-board'),svg=$('.connectors');
+const board=$('.map-board'),svg=$('.connectors');
 function drawConnectors(){
- if(innerWidth<1100)return;
+ if(innerWidth<1100||(board.dataset.section&&board.dataset.section!=='about'))return;
  const b=board.getBoundingClientRect();
  const point=(selector,side)=>{const r=$(selector).getBoundingClientRect();return {x:(side==='right'?r.right:r.left)-b.left,y:r.top+r.height/2-b.top};};
  const root=point('.profile','right'),about=point('.about-link','left'),aboutEnd=point('.about-link','right'),work=point('.projects-link','left'),photo=point('.cat-photo','left');
  const curves=[`M${root.x},${root.y} C${root.x+75},${root.y} ${about.x-80},${about.y} ${about.x},${about.y}`,`M${root.x},${root.y} C${root.x+90},${root.y} ${work.x-80},${work.y} ${work.x},${work.y}`,`M${aboutEnd.x},${aboutEnd.y} C${aboutEnd.x+100},${aboutEnd.y} ${photo.x-90},${photo.y} ${photo.x},${photo.y}`];
  svg.setAttribute('viewBox',`0 0 ${b.width} ${b.height}`);svg.innerHTML=curves.map(d=>`<path d="${d}"/>`).join('')+[root,about,aboutEnd,work,photo].map(p=>`<circle cx="${p.x}" cy="${p.y}" r="2.5"/>`).join('');
 }
+addEventListener('section-position-restored',drawConnectors);
+addEventListener('board-drag',drawConnectors);
 const connectorObserver=new ResizeObserver(drawConnectors);
 [board,$('.profile')].forEach(element=>connectorObserver.observe(element));document.fonts.ready.then(drawConnectors);
 let toastTimer;
 function notify(text){$('.toast').textContent=text;$('.toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('.toast').classList.remove('visible'),2800);}
-$('[data-email]').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('krawleek@yandex.ru');notify(en?'Email copied: krawleek@yandex.ru':'Почта скопирована: krawleek@yandex.ru');}catch{location.href='mailto:krawleek@yandex.ru';}});
+if(!$('[data-email]').dataset.emailBound)$('[data-email]').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('krawleek@yandex.ru');notify(en?'Email copied: krawleek@yandex.ru':'Почта скопирована: krawleek@yandex.ru');}catch{location.href='mailto:krawleek@yandex.ru';}});
+$('[data-email]').dataset.emailBound='true';
 function setFact(button,open){button.setAttribute('aria-expanded',String(open));document.getElementById(button.getAttribute('aria-controls')).hidden=!open;}
 function closeFacts(except){$$('[data-fact]').forEach(button=>{if(button!==except)setFact(button,false);});}
 $$('[data-fact]').forEach(button=>{
@@ -44,7 +47,7 @@ $$('[data-fact]').forEach(button=>{
 document.addEventListener('pointerdown',event=>{if(!event.target.closest('.fact-item'))closeFacts();});
 document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeFacts();closeMessage();}});
 
-enableBoardDrag(board,'.education-fact .fact-trigger, .mentoring-fact .fact-trigger, .challenge-fact .fact-trigger, .photo, .writing-icons, .p5-mark, .about-link, .projects-link, .photography-copy, .post, .ball-play, .message-invite, .trophy',drawConnectors);
+enableBoardDrag(board,'.education-fact .fact-trigger, .mentoring-fact .fact-trigger, .challenge-fact .fact-trigger, .photo, .writing-icons, .p5-mark, .about-link, .projects-link, .photography-copy, .post, .ball-play, .message-invite, .trophy, .facts, .selected',drawConnectors);
 const sticker=$('.home-sticker .fact-trigger');sticker.setAttribute('aria-describedby','sticker-help');
 let drag=null,offset={x:0,y:0};
 function placeSticker(x,y){const base=$('.home-sticker').getBoundingClientRect(),area=board.getBoundingClientRect();offset={x:Math.max(area.left-base.left,Math.min(x,area.right-base.left-sticker.offsetWidth)),y:Math.max(area.top-base.top,Math.min(y,area.bottom-base.top-sticker.offsetHeight))};for(const [axis,value] of Object.entries(offset))$('.home-sticker').style.setProperty(`--drag-${axis}`,`${value}px`);}
@@ -70,10 +73,10 @@ form.addEventListener('submit',async event=>{
  const message=$('#message').value.trim();if(!message)return;
  const send=form.querySelector('.message-send'),status=form.querySelector('.message-status');send.disabled=true;status.textContent=en?'Sending…':'Отправляю…';
  try{
-  const response=await fetch('/api/letters',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message,language,website:form.elements.website.value})});
+  const response=await fetch('/api/letters.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message,language,website:form.elements.website.value})});
   if(!response.ok)throw new Error(response.status===429?'rate':'server');
   const result=await response.json();if(!result.ok)throw new Error('server');
-  form.reset();status.textContent=en?'Message sent. Thank you!':'Сообщение отправлено. Спасибо!';
+  form.reset();status.textContent='';closeMessage();notify(en?'Message sent. Thank you!':'Сообщение отправлено. Спасибо!');toggle.focus({preventScroll:true});
  }catch(error){status.textContent=error.message==='rate'?(en?'Please wait a minute before sending again.':'Подождите минуту перед следующим сообщением.'):(en?'Could not send. Your text is saved here; please try again.':'Не удалось отправить. Текст сохранён в поле — попробуйте ещё раз.');}
  finally{send.disabled=false;}
 });

@@ -47,3 +47,6 @@ dialog{border:0;border-radius:24px;padding:32px;background:#fff;color:var(--text
  .profile-actions>:last-child{grid-column:2}
 }
 .background-ink{position:fixed;inset:0;z-index:6;pointer-events:none}.photo-trail{display:none}
+.contact-icon{display:block;flex:0 0 20px;width:20px;height:20px;background:currentColor;mask:var(--contact-icon) center/20px 20px no-repeat}
+.profile-actions a:focus-visible,.profile-actions button:focus-visible{color:var(--accent)}
+[data-board-section][hidden]{display:none!important}

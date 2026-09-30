@@ -13,6 +13,15 @@
   if(!to||!isSectionSwitch(new URL(location.href),new URL(to)))event.viewTransition.skipTransition();
  });
  addEventListener('pagereveal',event=>{
+  try{
+   const saved=JSON.parse(sessionStorage.getItem('portfolio-section-position')||'null');
+   sessionStorage.removeItem('portfolio-section-position');
+   if(saved?.to===location.pathname){
+    scrollTo({top:saved.scroll,behavior:'instant'});
+    for(const [selector,value] of [['.about-link',saved.about],['.projects-link',saved.work]]){const element=document.querySelector(selector);if(element)element.style.translate=value;}
+    dispatchEvent(new Event('section-position-restored'));
+   }
+  }catch{}
   if(!event.viewTransition)return;
   const from=navigation.activation?.from?.url;
   if(!from||!isSectionSwitch(new URL(from),new URL(location.href)))event.viewTransition.skipTransition();

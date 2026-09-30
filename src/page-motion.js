@@ -34,14 +34,12 @@ if(root.classList.contains('language-enter')){
 }
 let leaving=false;
 export function navigateWithFade(href){
- if(leaving)return;leaving=true;
  const url=new URL(href,location.href);
  const boardPath=/^\/(ru|en)\/(about\/)?$/;
  if(boardPath.test(location.pathname)&&boardPath.test(url.pathname)&&location.pathname!==url.pathname&&location.pathname.split('/')[1]===url.pathname.split('/')[1]){
-  // Keep shared elements visible via native shared-element snapshots.
-  // Without support this remains a normal navigation, with no screen fade.
-  url.hash='';location.assign(url.href);return;
+  import('./section-navigation.js').then(module=>module.switchSection(url.href));return;
  }
+ if(leaving)return;leaving=true;
  try{sessionStorage.setItem('portfolio-language-transition',url.pathname);}catch{}
  root.classList.add('language-leave');setTimeout(()=>location.assign(url.href),reduced.matches?0:260);
 }

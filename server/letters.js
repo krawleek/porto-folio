@@ -10,7 +10,7 @@ export function lettersApi(){
  db.exec('CREATE TABLE IF NOT EXISTS letters (id INTEGER PRIMARY KEY, created TEXT NOT NULL, message TEXT NOT NULL, language TEXT NOT NULL)');
  const attempts=new Map();
  return async(req,res,next)=>{
-  const path=new URL(req.url,'http://localhost').pathname;if(path!=='/api/letters')return next();
+  const path=new URL(req.url,'http://localhost').pathname;if(!['/api/letters','/api/letters.php'].includes(path))return next();
   res.setHeader('Cache-Control','no-store');res.setHeader('Content-Type','application/json; charset=utf-8');
   const reply=(code,data)=>{res.statusCode=code;res.end(JSON.stringify(data));};
   if(req.method==='GET'){
@@ -19,7 +19,7 @@ export function lettersApi(){
    return reply(200,{letters:db.prepare('SELECT * FROM letters ORDER BY id DESC LIMIT 500').all()});
   }
   if(req.method!=='POST')return reply(405,{error:'method'});
-  const origin=req.headers.origin;if(!origin||new URL(origin).host!==req.headers.host)return reply(403,{error:'origin'});
+  const origin=req.headers.origin;if(!origin||!URL.canParse(origin)||new URL(origin).host!==req.headers.host)return reply(403,{error:'origin'});
   if(!req.headers['content-type']?.startsWith('application/json'))return reply(415,{error:'type'});
   const ip=req.socket.remoteAddress,now=Date.now();for(const [k,v]of attempts)if(now-v>60000)attempts.delete(k);
   if(attempts.has(ip))return reply(429,{error:'rate'});
