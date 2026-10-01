@@ -4,7 +4,8 @@ const language=document.documentElement.lang;
 const sectionFor=path=>path.includes('/about/')?'about':'main';
 let current=sectionFor(location.pathname),busy=false,queued=null;
 board.dataset.section=current;
-const sections=new Map(),shared='.profile,.board-navigation,.connectors';
+// Keep shared board labels mounted and outside section fade animations.
+const sections=new Map(),shared='.profile,.board-navigation,.connectors,.facts,.selected';
 function register(section,elements){elements.forEach(el=>{el.dataset.boardSection=section;});sections.set(section,elements);}
 register(current,[...board.children].filter(el=>!el.matches(shared)));
 const titles=new Map([[current,document.title]]);
