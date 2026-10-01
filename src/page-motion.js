@@ -9,7 +9,7 @@ if(root.classList.contains('is-loading')){
  const ready=Promise.race([Promise.allSettled([document.fonts.ready,...[...document.images].filter(img=>img.loading!=='lazy').map(img=>img.decode().catch(()=>{}))]),pause(3000)]);
  (async()=>{
   if(!reduced.matches){
-   const words=['Design','UX/UI','Vibecoding','Prototyping','Business','Solutions','Metrics','bla bla bla'];
+   const words=['Design','UX/UI','Vibecoding','Prototyping','Business','Solutions','Metrics','Bla bla bla'];
    for(let i=0;i<words.length;i++){
     word.textContent=words[i];
     await pause(i===0?400:i===words.length-1?550:190);

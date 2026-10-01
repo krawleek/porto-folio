@@ -4,6 +4,7 @@ import '@fontsource-variable/geist';
 import '@fontsource-variable/geist-mono';
 import './main.css';
 import './about.css';
+import {messageSurface} from './message-surface.js';
 import {mountBilliards} from './billiards.js';
 import './background-interactions.js';
 import {enableBoardDrag} from './board-drag.js';
@@ -65,18 +66,19 @@ viewer.addEventListener('click',event=>{if(event.target===viewer){const r=viewer
 viewer.addEventListener('close',()=>photoTrigger?.focus({preventScroll:true}));
 
 const toggle=$('.message-toggle'),form=$('#message-form');
-function closeMessage(){form.hidden=true;toggle.setAttribute('aria-expanded','false');}
-toggle.addEventListener('click',()=>{const open=form.hidden;form.hidden=!open;toggle.setAttribute('aria-expanded',String(open));if(open)$('#message').focus({preventScroll:true});});
+const surface=messageSurface(form,toggle,en);
+function closeMessage(){surface.close();}
+toggle.addEventListener('click',()=>{if(form.hidden||toggle.getAttribute('aria-expanded')==='false')surface.open();else surface.close();});
 document.addEventListener('pointerdown',event=>{if(!event.target.closest('.message-invite'))closeMessage();});
 form.addEventListener('submit',async event=>{
  event.preventDefault();if(!form.reportValidity())return;
  const message=$('#message').value.trim();if(!message)return;
- const send=form.querySelector('.message-send'),status=form.querySelector('.message-status');send.disabled=true;status.textContent=en?'Sending…':'Отправляю…';
+ const send=form.querySelector('.message-send'),status=form.querySelector('.message-status');if(send.disabled)return;send.disabled=true;status.textContent=en?'Sending…':'Отправляю…';
  try{
   const response=await fetch('/api/letters.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message,language,website:form.elements.website.value})});
   if(!response.ok)throw new Error(response.status===429?'rate':'server');
   const result=await response.json();if(!result.ok)throw new Error('server');
-  form.reset();status.textContent='';closeMessage();notify(en?'Message sent. Thank you!':'Сообщение отправлено. Спасибо!');toggle.focus({preventScroll:true});
+  form.reset();status.textContent='';await surface.sent();
  }catch(error){status.textContent=error.message==='rate'?(en?'Please wait a minute before sending again.':'Подождите минуту перед следующим сообщением.'):(en?'Could not send. Your text is saved here; please try again.':'Не удалось отправить. Текст сохранён в поле — попробуйте ещё раз.');}
  finally{send.disabled=false;}
 });

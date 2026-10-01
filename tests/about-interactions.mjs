@@ -19,7 +19,7 @@ try{
   await expect(page.locator('.message-send')).toBeVisible();await expect(page.locator('.message-form .confirm')).toHaveCount(0);
   // Do not store test messages in the owner's real local inbox.
   await page.route('**/api/letters.php',route=>route.fulfill({status:201,contentType:'application/json',body:'{"ok":true}'}));
-  await page.locator('.message-send').click();await expect(page.locator('#message-form')).toBeHidden();await expect(page.locator('.toast')).toContainText(language==='ru'?'отправлено':'sent');
+  await page.locator('.message-send').click();await expect(page.locator('#message-form')).toBeVisible();await expect(page.locator('.message-success')).toContainText(language==='ru'?'отправлено':'sent');
   await page.mouse.click(20,20);await page.mouse.move(20,850);await page.mouse.down();await page.mouse.move(90,890,{steps:12});await page.mouse.up();
   const ink=await page.locator('.background-ink').evaluate(canvas=>canvas.getContext('2d').getImageData(0,0,canvas.width,canvas.height).data.some((value,index)=>index%4===3&&value>0));expect(ink).toBe(true);
   console.log(language,'hover notes, collisions, message UI and drawing passed');

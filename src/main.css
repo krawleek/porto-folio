@@ -50,3 +50,8 @@ dialog{border:0;border-radius:24px;padding:32px;background:#fff;color:var(--text
 .contact-icon{display:block;flex:0 0 20px;width:20px;height:20px;background:currentColor;mask:var(--contact-icon) center/20px 20px no-repeat}
 .profile-actions a:focus-visible,.profile-actions button:focus-visible{color:var(--accent)}
 [data-board-section][hidden]{display:none!important}
+
+/* English project artwork uses its own Figma image fills and crop. */
+.vtb .localized-preview{width:132.39%;height:173.39%;left:-14.97%;top:-11.2%}
+.alfa .localized-preview{width:138.39%;height:169.76%;left:-17.4%;top:-35.22%}
+.wasd .localized-preview{width:243.28%;height:298.43%;left:-82.52%;top:-68.17%}

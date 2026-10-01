@@ -6,13 +6,15 @@ mountCase();
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 initCaseMenu();
 
-initCaseCarousel($('.carousel'));
+$$('.carousel').forEach(initCaseCarousel);
 $$('.comparison').forEach(comparison=>{
  const input=$('input',comparison);let pointer=null;
- const update=value=>{value=Math.max(0,Math.min(100,value));input.value=String(value);comparison.style.setProperty('--reveal',`${value}%`);input.setAttribute('aria-valuetext',`До ${Math.round(value)}%, после ${100-Math.round(value)}%`);};
+ const update=value=>{value=Math.max(0,Math.min(100,value));input.value=String(value);comparison.style.setProperty('--reveal',`${value}%`);input.setAttribute('aria-valuetext',document.documentElement.lang==='en'?`Before ${Math.round(value)}%, after ${100-Math.round(value)}%`:`До ${Math.round(value)}%, после ${100-Math.round(value)}%`);};
+ input.addEventListener('keydown',()=>comparison.classList.remove('pointer-interaction'));
+ input.addEventListener('blur',()=>comparison.classList.remove('pointer-interaction'));
  input.addEventListener('input',()=>update(Number(input.value)));
  const fromPointer=e=>{const r=comparison.getBoundingClientRect();update((e.clientX-r.left)/r.width*100);};
- input.addEventListener('pointerdown',e=>{if(e.button!==0)return;pointer=e.pointerId;input.setPointerCapture(e.pointerId);input.focus({preventScroll:true});fromPointer(e);e.preventDefault();});
+ input.addEventListener('pointerdown',e=>{if(e.button!==0)return;comparison.classList.add('pointer-interaction');pointer=e.pointerId;input.setPointerCapture(e.pointerId);input.focus({preventScroll:true});fromPointer(e);e.preventDefault();});
  input.addEventListener('pointermove',e=>{if(pointer===e.pointerId)fromPointer(e);});
  const release=()=>pointer=null;input.addEventListener('pointerup',release);input.addEventListener('pointercancel',release);input.addEventListener('lostpointercapture',release);
 });

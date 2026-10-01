@@ -4,7 +4,7 @@ const viewport=$('.carousel-viewport'),track=$('.carousel-track'),dots=$$('[data
 const reduce=matchMedia('(prefers-reduced-motion:reduce)');
 let current=0,timer=null,paused=reduce.matches,hover=false,focused=false,visible=false,gesture=null;
 function schedule(){clearTimeout(timer);if(!paused&&!hover&&!focused&&visible&&!document.hidden)timer=setTimeout(()=>{show(current+1);},5000);}
-function show(index,manual=false){current=(index+dots.length)%dots.length;track.style.transform=`translateX(-${current*100}%)`;dots.forEach((dot,i)=>dot.setAttribute('aria-pressed',String(i===current)));$$('.carousel-slide').forEach((slide,i)=>slide.setAttribute('aria-hidden',String(i!==current)));if(manual)$('.carousel-status').textContent=`Слайд ${current+1} из 3`;schedule();}
+function show(index,manual=false){current=(index+dots.length)%dots.length;track.style.transform=`translateX(-${current*100}%)`;dots.forEach((dot,i)=>dot.setAttribute('aria-pressed',String(i===current)));$$('.carousel-slide').forEach((slide,i)=>slide.setAttribute('aria-hidden',String(i!==current)));if(manual)$('.carousel-status').textContent=document.documentElement.lang==='en'?`Slide ${current+1} of ${dots.length}`:`Слайд ${current+1} из ${dots.length}`;schedule();}
 $('.carousel-prev').addEventListener('click',()=>show(current-1,true));$('.carousel-next').addEventListener('click',()=>show(current+1,true));
 dots.forEach(dot=>dot.addEventListener('click',()=>show(Number(dot.dataset.slide),true)));
 carousel.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){hover=true;schedule();}});carousel.addEventListener('pointerleave',()=>{hover=false;schedule();});
