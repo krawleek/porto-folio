@@ -28,6 +28,7 @@ dialog{border:0;border-radius:24px;padding:32px;background:#fff;color:var(--text
 .profile .location{color:var(--muted)}
 .profile-cover{visibility:visible;width:100%;height:151px;border-radius:31px 31px 0 0;overflow:hidden;pointer-events:none;contain:paint}.profile-cover .mountains{position:absolute;left:0;top:.09%;width:108.57%;height:186.74%;max-width:none;object-fit:fill}.profile:has(.profile-cover) .location{color:white}
 .board-navigation{display:contents}
+.board-navigation .pill{font-size:18px}
 @media(max-width:1099px){
  .map-board .facts{display:none}
  .board-navigation{display:flex;grid-column:1/-1;grid-row:2;justify-content:center;align-items:center;gap:16px;width:100%;order:1}
@@ -35,6 +36,7 @@ dialog{border:0;border-radius:24px;padding:32px;background:#fff;color:var(--text
  .map-board .toolbox{grid-column:1/-1;grid-row:3}
 }
 @media(max-width:599px){
+ .board-navigation .pill{font-size:16px}
  .map-board:not(.about-board)>.profile{order:0}
  .map-board:not(.about-board)>.toolbox{order:2}
  .map-board:not(.about-board)>.projects{order:3}
@@ -55,3 +57,6 @@ dialog{border:0;border-radius:24px;padding:32px;background:#fff;color:var(--text
 .vtb .localized-preview{width:132.39%;height:173.39%;left:-14.97%;top:-11.2%}
 .alfa .localized-preview{width:138.39%;height:169.76%;left:-17.4%;top:-35.22%}
 .wasd .localized-preview{width:243.28%;height:298.43%;left:-82.52%;top:-68.17%}
+
+/* Shared case access code is not an account password. */
+#case-password{-webkit-text-security:disc}
