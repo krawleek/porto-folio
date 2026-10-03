@@ -1,4 +1,4 @@
-.vtb-cover{position:relative;aspect-ratio:1320/743;overflow:hidden;border-radius:24px;background:#f8f8f8;box-shadow:0 4px 8px #1010121f}.vtb-cover img{position:absolute;width:103.636%;height:110.229%;left:-1.818%;top:-.538%;object-fit:fill;border-radius:0;box-shadow:none}.vtb-carousel .carousel-slide{aspect-ratio:648/338.6567;overflow:hidden;position:relative}.vtb-carousel .carousel-slide:first-child img{height:109.59%;position:absolute;top:-9.8%;width:100%;object-fit:fill}.vtb-research>.case-context{margin:32px 0;max-width:873px}.vtb-role{max-width:983px;font-size:32px;line-height:32px;font-weight:500;letter-spacing:-1px}.vtb-role p:first-child{font-size:48px;line-height:48px;letter-spacing:-2px}.vtb-role p+p{margin-top:32px}.vtb-main .showcase{height:240svh}.showcase-intro{font-size:24px;line-height:28px;letter-spacing:-.5px;max-width:425px;margin-bottom:24px}.vtb-main .showcase-copy .case-lead{font-size:20px;line-height:24px;letter-spacing:-.33px;color:#636366}.vtb-thanks{max-width:983px;font-size:20px;line-height:24px}.vtb-next{background:#e4e4e4}.vtb-next-art{position:absolute;inset:0}.vtb-next-art img{width:100%;height:100%;object-fit:cover}.vtb-next .case-tag{background:#101012;color:#fff}.vtb-main .case-results h3{overflow-wrap:normal}
+.vtb-cover{position:relative;aspect-ratio:1320/743;overflow:hidden;border-radius:24px;background:#f8f8f8;box-shadow:0 4px 8px #1010121f}.vtb-cover img{position:absolute;width:103.636%;height:110.229%;left:-1.818%;top:-.538%;object-fit:fill;border-radius:0;box-shadow:none}.vtb-carousel .carousel-slide{aspect-ratio:648/338.6567;overflow:hidden;position:relative}.vtb-carousel .carousel-slide:first-child img{height:109.59%;position:absolute;top:-9.8%;width:100%;object-fit:fill}.vtb-research>.case-context{margin:32px 0;max-width:873px}.vtb-role{max-width:983px;font-size:32px;line-height:32px;font-weight:500;letter-spacing:-1px}.vtb-role p:first-child{font-size:48px;line-height:48px;letter-spacing:-2px;font-weight:500}.vtb-role p+p{margin-top:32px}.vtb-main .showcase{height:240svh}.showcase-intro{font-size:24px;line-height:28px;letter-spacing:-.5px;max-width:425px;margin-bottom:24px;font-weight:400}.vtb-main .showcase-copy .case-lead{font-size:20px;line-height:24px;letter-spacing:-.33px;color:#636366}.vtb-thanks{max-width:983px;font-size:20px;line-height:24px}.vtb-next{background:#e4e4e4}.vtb-next-art{position:absolute;inset:0}.vtb-next-art img{width:100%;height:100%;object-fit:cover}.vtb-next .case-tag{background:#101012;color:#fff}.vtb-main .case-results h3{overflow-wrap:normal}
 @media(max-width:1100px){.vtb-main .case-results h3{font-size:56px;line-height:58px;letter-spacing:-2px}.vtb-role p:first-child{font-size:38px;line-height:42px}}
 @media(max-width:700px){.vtb-cover{border-radius:16px}.vtb-role{font-size:22px;line-height:27px;letter-spacing:-.5px}.vtb-role p:first-child{font-size:28px;line-height:32px;letter-spacing:-1px}.showcase-intro{font-size:17px;line-height:21px;margin-bottom:12px}.vtb-main .showcase-copy .case-lead{font-size:15px;line-height:19px}.vtb-main .showcase-descriptions{min-height:76px}.vtb-main .showcase-copy h2{font-size:26px;line-height:28px;margin-bottom:12px}.vtb-main .showcase-sticky{gap:12px}.vtb-next-art{opacity:.7}.vtb-next-art:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent,#e4e4e4 95%)}.vtb-thanks{font-size:18px;line-height:23px}}
 @media(prefers-reduced-motion:reduce){.vtb-main .showcase{height:auto}}
@@ -6,18 +6,18 @@
 
 /* Updated VTB case typography; shared case styles stay unchanged. */
 .vtb-main{padding-top:103px}
-.vtb-main .case-lead,.vtb-main .case-context{font-size:24px;line-height:24px;letter-spacing:-.5px;max-width:873px}
+.vtb-main .case-lead,.vtb-main .case-context{font-size:24px;line-height:24px;letter-spacing:-.5px;max-width:873px;font-weight:400}
 .vtb-main .case-intro .case-lead{color:#3c3c43b8}
 .vtb-main .case-lead p+p,.vtb-main .case-context p+p{margin-top:24px}
-.vtb-main .vtb-business-context p+p{font-size:48px;line-height:48px;letter-spacing:-2px;margin-top:72px}
+.vtb-main .vtb-business-context p+p{font-size:48px;line-height:48px;letter-spacing:-2px;margin-top:72px;font-weight:500}
 .vtb-main .case-meta{grid-template-columns:201px 428px minmax(0,1fr) 200px}
 .vtb-main .case-meta>div:nth-child(n){grid-column:auto;grid-row:auto}
-.vtb-role{max-width:873px;font-size:24px;line-height:24px;letter-spacing:-.5px}
+.vtb-role{max-width:873px;font-size:24px;line-height:24px;letter-spacing:-.5px;font-weight:400}
 .vtb-role p+p{color:#3c3c43b8;margin-top:48px}
 .vtb-main .showcase-intro{font-size:32px;line-height:32px;letter-spacing:-1px}
-.vtb-main .showcase-copy .case-lead{font-size:24px;line-height:24px;letter-spacing:-.5px;color:#3c3c4352}
-.vtb-main .vtb-outcomes .case-lead{font-size:32px;line-height:32px;letter-spacing:-1px;color:#101012}
-.vtb-main .vtb-outcomes .case-lead p+p{font-size:24px;line-height:24px;letter-spacing:-.5px;color:#3c3c43b8}
+.vtb-main .showcase-copy .case-lead{font-size:24px;line-height:24px;letter-spacing:-.5px;color:#3c3c4352;font-weight:400}
+.vtb-main .vtb-outcomes .case-lead{font-size:32px;line-height:32px;letter-spacing:-1px;color:#101012;font-weight:500}
+.vtb-main .vtb-outcomes .case-lead p+p{font-size:24px;line-height:24px;letter-spacing:-.5px;color:#3c3c43b8;font-weight:400}
 .vtb-thanks{font-size:32px;line-height:32px;letter-spacing:-1px;max-width:873px;font-weight:500}
 .vtb-cover-en{background:#f7f7f7}
 .vtb-cover-en img{width:91.02%;height:97.79%;left:4.49%;top:7.59%;object-fit:fill}
@@ -26,9 +26,17 @@
 .vtb-carousel .vtb-en-carousel-cover .carousel-legacy{height:109.59%;top:-9.8%;object-fit:fill}
 .vtb-next-art-en{inset:auto;left:-1.06%;top:-231.39px;width:182.35%;height:658px}
 .vtb-next-art-en img{position:absolute;inset:0}
-@media(max-width:1100px){.vtb-main{padding-top:72px}.vtb-main .case-meta{grid-template-columns:repeat(2,minmax(0,1fr))}.vtb-main .showcase-intro{font-size:24px;line-height:26px}.vtb-main .showcase-copy .case-lead{font-size:20px;line-height:24px}}
-@media(max-width:700px){.vtb-main{padding-top:48px}.vtb-main .case-lead,.vtb-main .case-context,.vtb-role{font-size:20px;line-height:25px}.vtb-main .vtb-business-context p+p{font-size:30px;line-height:32px;letter-spacing:-1px;margin-top:40px}.vtb-role p+p{margin-top:24px}.vtb-main .showcase-intro{font-size:18px;line-height:22px;letter-spacing:-.5px}.vtb-main .showcase-copy .case-lead{font-size:16px;line-height:20px;letter-spacing:-.33px}.vtb-main .vtb-outcomes .case-lead,.vtb-thanks{font-size:24px;line-height:28px;letter-spacing:-.5px}.vtb-main .vtb-outcomes .case-lead p+p{font-size:20px;line-height:25px}.vtb-next-art-en{left:-80%;top:-100px;width:350%;height:460px}}
+@media(max-width:1100px){.vtb-main{padding-top:72px}.vtb-main .case-meta{grid-template-columns:repeat(2,minmax(0,1fr))}.vtb-main .showcase-intro{font-size:24px;line-height:26px;font-weight:400}.vtb-main .showcase-copy .case-lead{font-size:20px;line-height:24px}}
+@media(max-width:700px){.vtb-main{padding-top:48px}.vtb-main .case-lead,.vtb-main .case-context,.vtb-role{font-size:20px;line-height:25px}.vtb-main .vtb-business-context p+p{font-size:30px;line-height:32px;letter-spacing:-1px;margin-top:40px}.vtb-role p+p{margin-top:24px}.vtb-main .showcase-intro{font-size:18px;line-height:22px;letter-spacing:-.5px}.vtb-main .showcase-copy .case-lead{font-size:16px;line-height:20px;letter-spacing:-.33px}.vtb-main .vtb-outcomes .case-lead,.vtb-thanks{font-size:24px;line-height:28px;letter-spacing:-.5px;font-weight:400}.vtb-main .vtb-outcomes .case-lead p+p{font-size:20px;line-height:25px}.vtb-next-art-en{left:-80%;top:-100px;width:350%;height:460px}}
 .vtb-research-art{position:relative;aspect-ratio:1320/743;overflow:hidden;border-radius:20px}
 .vtb-research-art img{position:absolute;width:101.48%;height:101.42%;left:-.75%;top:-.71%;border-radius:0;box-shadow:none}
 
 .vtb-cover-upload img{display:block;width:100%;height:auto}
+
+/* Next case: reuse the NSPK banner composition from the WASD case. */
+.vtb-nspk-next{background:#e1e2e3}
+.vtb-nspk-next-art{position:absolute;inset:0;width:100%;height:100%}
+.vtb-nspk-next-art img{position:absolute;width:142.2%;height:352.55%;left:-7.43%;top:-83.66%;object-fit:fill}
+.vtb-nspk-next .case-tag{background:#101012;color:#fff}
+.vtb-nspk-next .next-case-copy{max-width:511px}
+@media(max-width:700px){.vtb-nspk-next-art img{width:280%;left:-55%}.vtb-nspk-next-art:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent,#e1e2e3 95%)}}
