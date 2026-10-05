@@ -30,7 +30,12 @@
   if(sessionStorage.getItem('portfolio-language-transition')===location.pathname){
    sessionStorage.removeItem('portfolio-language-transition');root.classList.add('language-enter');
   }
-  if(!sessionStorage.getItem('portfolio-loaded')&&/^\/(ru|en)\/(about\/)?$/.test(location.pathname))root.classList.add('is-loading');
+  // Claim the first visit before loading assets or the application bundle.
+  // A slow or interrupted first load must never replay the intro on navigation.
+  if(!sessionStorage.getItem('portfolio-loaded')){
+   sessionStorage.setItem('portfolio-loaded','true');
+   root.classList.add('is-loading');
+  }
  }catch{}
  setTimeout(()=>root.classList.remove('is-loading','language-enter'),4500);
 })();

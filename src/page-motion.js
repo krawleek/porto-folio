@@ -17,7 +17,6 @@ if(root.classList.contains('is-loading')){
   }
   await ready;
   loader.classList.add('is-complete');
-  try{sessionStorage.setItem('portfolio-loaded','true');}catch{}
   await pause(reduced.matches?0:750);
   root.classList.remove('is-loading','loader-mounted');loader.remove();
  })();
@@ -49,4 +48,7 @@ document.addEventListener('click',event=>{
  if(!link||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||link.origin!==location.origin||link.target==='_blank'||link.hasAttribute('download')||link.pathname===location.pathname)return;
  event.preventDefault();navigateWithFade(link.href);
 });
-addEventListener('pageshow',()=>{leaving=false;root.classList.remove('language-leave');});
+addEventListener('pageshow',event=>{
+ leaving=false;root.classList.remove('language-leave');
+ if(event.persisted){root.classList.remove('is-loading','loader-mounted','language-enter');document.querySelector('.site-loader')?.remove();}
+});

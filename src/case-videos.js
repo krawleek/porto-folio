@@ -6,15 +6,22 @@ export function initCaseVideos(){
   video.muted=true;
   const play=()=>{
    if(!video.src&&video.dataset.src){video.src=video.dataset.src;delete video.dataset.src;}
-   video.play().then(()=>container.classList.remove('video-unavailable')).catch(()=>container.classList.add('video-unavailable'));
+   video.play().then(()=>container.classList.remove('video-unavailable')).catch(error=>{if(error.name!=='AbortError')container.classList.add('video-unavailable');});
   };
   function update(){
    if(visible&&!document.hidden&&(!reduce.matches||manual))play();
    else {video.pause();if(reduce.matches&&!manual)container.classList.add('video-unavailable');}
   }
   button.addEventListener('click',()=>{manual=true;play();});
-  video.addEventListener('playing',()=>{container.classList.remove('video-unavailable');container.classList.add('video-ready');});
-  video.addEventListener('error',()=>container.classList.add('video-unavailable'));
+  const showPoster=()=>container.classList.remove('video-ready');
+  video.addEventListener('playing',()=>{
+   container.classList.remove('video-unavailable');
+   const reveal=()=>{if(!video.paused&&video.readyState>=2)container.classList.add('video-ready');};
+   if(video.requestVideoFrameCallback)video.requestVideoFrameCallback(reveal);else reveal();
+  });
+  video.addEventListener('waiting',showPoster);
+  video.addEventListener('emptied',showPoster);
+  video.addEventListener('error',()=>{showPoster();container.classList.add('video-unavailable');});
   new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;update();},{rootMargin:'150px 0px'}).observe(container);
   document.addEventListener('visibilitychange',update);reduce.addEventListener('change',update);
   if(reduce.matches){video.autoplay=false;video.pause();container.classList.add('video-unavailable');}

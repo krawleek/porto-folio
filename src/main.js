@@ -35,7 +35,16 @@ const dialog=$('#sheet'),form=$('.password-form'),input=$('#case-password'),help
 const popover=document.createElement('div');popover.className='password-popover';popover.hidden=true;document.body.append(popover);
 input.placeholder=en?'Enter password':'Введите пароль';
 const desktop=matchMedia('(min-width:1100px)');
-function closePassword(){if(dialog.open)dialog.close();popover.hidden=true;trigger?.focus({preventScroll:true});}
+function closePassword(){input.blur();if(dialog.open)dialog.close();popover.hidden=true;trigger?.focus({preventScroll:true});}
+function syncPasswordViewport(){
+ if(!dialog.open||desktop.matches)return;
+ const viewport=window.visualViewport;
+ dialog.style.setProperty('--sheet-viewport',`${viewport?.height??innerHeight}px`);
+ dialog.style.setProperty('--sheet-keyboard',`${viewport?Math.max(0,innerHeight-viewport.height-viewport.offsetTop):0}px`);
+}
+window.visualViewport?.addEventListener('resize',syncPasswordViewport);
+window.visualViewport?.addEventListener('scroll',syncPasswordViewport);
+addEventListener('resize',syncPasswordViewport);
 document.addEventListener('pointerdown',event=>{if(!popover.hidden&&!popover.contains(event.target)&&!event.target.closest('[data-project]'))closePassword();});
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!popover.hidden)closePassword();});
 desktop.addEventListener('change',closePassword);
@@ -49,15 +58,22 @@ function openProject(link,event){
   const r=link.getBoundingClientRect();
   popover.style.left=`${Math.max(12,Math.min(event?.detail ? event.clientX+8 : r.left+24,innerWidth-187))}px`;
   popover.style.top=`${Math.max(12,Math.min(event?.detail ? event.clientY+8 : r.top+155,innerHeight-90))}px`;
- }else{popover.hidden=true;dialog.append(form);dialog.showModal();}
- input.focus({preventScroll:true});
+  input.focus({preventScroll:true});
+ }else{
+  popover.hidden=true;dialog.append(form);
+  input.readOnly=true;
+  dialog.showModal();
+  dialog.querySelector('.close').focus({preventScroll:true});
+  input.readOnly=false;
+  syncPasswordViewport();
+ }
 }
 document.querySelectorAll('[data-project]').forEach(link=>link.addEventListener('click',event=>{if(event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();openProject(link,event);}));
 form.addEventListener('submit',event=>{event.preventDefault();if(input.value!=='121064'){helper.textContent=en?'Incorrect password':'Пароль неверный';input.setAttribute('aria-invalid','true');input.focus();return;}access=true;try{sessionStorage.setItem('ndaAccess','true');}catch{}form.classList.add('success');helper.textContent=en?'Opening case':'Иду к кейсу';setTimeout(()=>navigateWithFade(destination),350);});
 input.addEventListener('input',()=>{helper.textContent='';input.removeAttribute('aria-invalid');});
 dialog.querySelector('.close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});
-dialog.addEventListener('close',()=>trigger?.focus({preventScroll:true}));
+dialog.addEventListener('close',()=>{input.blur();dialog.style.removeProperty('--sheet-keyboard');dialog.style.removeProperty('--sheet-viewport');trigger?.focus({preventScroll:true});});
 const requested=new URLSearchParams(location.search).get('case');
 if(['vtb','nspk','wasd','alfa'].includes(requested)){history.replaceState(null,'',location.pathname+location.hash);openProject($(`#${requested} .project-link`));}
 let toastTimer;

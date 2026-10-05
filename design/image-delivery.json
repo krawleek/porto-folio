@@ -1,0 +1,3748 @@
+{
+  "encoding": "WebP lossless; original pixels at native width; Lanczos3 for smaller variants",
+  "assets": [
+    {
+      "original": "/assets/alfa/imgImage54.png",
+      "originalBytes": 4344633,
+      "width": 4096,
+      "height": 2304,
+      "variants": [
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-640.webp",
+          "width": 640,
+          "bytes": 55676
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-1280.webp",
+          "width": 1280,
+          "bytes": 211536
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-1320.webp",
+          "width": 1320,
+          "bytes": 224212
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-2560.webp",
+          "width": 2560,
+          "bytes": 603668
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-2640.webp",
+          "width": 2640,
+          "bytes": 694892
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-4096.webp",
+          "width": 4096,
+          "bytes": 1015646
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage55.png",
+      "originalBytes": 324777,
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "url": "/assets/responsive/a96524c5e3dd60d9-640.webp",
+          "width": 640,
+          "bytes": 47644
+        },
+        {
+          "url": "/assets/responsive/a96524c5e3dd60d9-1280.webp",
+          "width": 1280,
+          "bytes": 136174
+        },
+        {
+          "url": "/assets/responsive/a96524c5e3dd60d9-1320.webp",
+          "width": 1320,
+          "bytes": 144138
+        },
+        {
+          "url": "/assets/responsive/a96524c5e3dd60d9-1920.webp",
+          "width": 1920,
+          "bytes": 191044
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage91.png",
+      "originalBytes": 90155,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/58100761e2b9a49c-393.webp",
+          "width": 393,
+          "bytes": 55824
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage92.png",
+      "originalBytes": 100746,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/1cd64181344c106c-393.webp",
+          "width": 393,
+          "bytes": 62292
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage93.png",
+      "originalBytes": 101377,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/a8250e57dfac325e-393.webp",
+          "width": 393,
+          "bytes": 62352
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage83.png",
+      "originalBytes": 432774,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/a14a43f5d17cb21b-320.webp",
+          "width": 320,
+          "bytes": 80384
+        },
+        {
+          "url": "/assets/responsive/a14a43f5d17cb21b-640.webp",
+          "width": 640,
+          "bytes": 256212
+        },
+        {
+          "url": "/assets/responsive/a14a43f5d17cb21b-786.webp",
+          "width": 786,
+          "bytes": 284232
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage78.png",
+      "originalBytes": 240043,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/582823a985121efe-320.webp",
+          "width": 320,
+          "bytes": 68208
+        },
+        {
+          "url": "/assets/responsive/582823a985121efe-786.webp",
+          "width": 786,
+          "bytes": 151190
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage81.png",
+      "originalBytes": 336017,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/cf59a3e0546e3f07-320.webp",
+          "width": 320,
+          "bytes": 72014
+        },
+        {
+          "url": "/assets/responsive/cf59a3e0546e3f07-640.webp",
+          "width": 640,
+          "bytes": 204476
+        },
+        {
+          "url": "/assets/responsive/cf59a3e0546e3f07-786.webp",
+          "width": 786,
+          "bytes": 216488
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage82.png",
+      "originalBytes": 96974,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/03bd88b5c99ce9fc-786.webp",
+          "width": 786,
+          "bytes": 41022
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage86.png",
+      "originalBytes": 432774,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/a14a43f5d17cb21b-320.webp",
+          "width": 320,
+          "bytes": 80384
+        },
+        {
+          "url": "/assets/responsive/a14a43f5d17cb21b-640.webp",
+          "width": 640,
+          "bytes": 256212
+        },
+        {
+          "url": "/assets/responsive/a14a43f5d17cb21b-786.webp",
+          "width": 786,
+          "bytes": 284232
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage87.png",
+      "originalBytes": 207672,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/709f4282514148d6-320.webp",
+          "width": 320,
+          "bytes": 68318
+        },
+        {
+          "url": "/assets/responsive/709f4282514148d6-786.webp",
+          "width": 786,
+          "bytes": 121446
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage85.png",
+      "originalBytes": 287660,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/1ab1cdc8a5c383c4-320.webp",
+          "width": 320,
+          "bytes": 162288
+        },
+        {
+          "url": "/assets/responsive/1ab1cdc8a5c383c4-393.webp",
+          "width": 393,
+          "bytes": 196118
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage94.png",
+      "originalBytes": 47283,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/0b4c0ce97820ca68-393.webp",
+          "width": 393,
+          "bytes": 27044
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage95.png",
+      "originalBytes": 66284,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/3960233456d48e00-393.webp",
+          "width": 393,
+          "bytes": 39296
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage96.png",
+      "originalBytes": 123690,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/3a34c44aa85b02c7-393.webp",
+          "width": 393,
+          "bytes": 79562
+        }
+      ]
+    },
+    {
+      "original": "/assets/case-refresh/alfa-video-preview.png",
+      "originalBytes": 149206,
+      "width": 1024,
+      "height": 683,
+      "variants": [
+        {
+          "url": "/assets/responsive/45d53deb5703e6b6-640.webp",
+          "width": 640,
+          "bytes": 40208
+        },
+        {
+          "url": "/assets/responsive/45d53deb5703e6b6-1024.webp",
+          "width": 1024,
+          "bytes": 84406
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgImage73.png",
+      "originalBytes": 1157224,
+      "width": 1112,
+      "height": 1402,
+      "variants": [
+        {
+          "url": "/assets/responsive/ab560b971bc6ef51-640.webp",
+          "width": 640,
+          "bytes": 286656
+        },
+        {
+          "url": "/assets/responsive/ab560b971bc6ef51-1112.webp",
+          "width": 1112,
+          "bytes": 619288
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgPicture2.png",
+      "originalBytes": 1367766,
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "url": "/assets/responsive/5f6ffd781f34c49c-320.webp",
+          "width": 320,
+          "bytes": 20118
+        },
+        {
+          "url": "/assets/responsive/5f6ffd781f34c49c-640.webp",
+          "width": 640,
+          "bytes": 74216
+        },
+        {
+          "url": "/assets/responsive/5f6ffd781f34c49c-1280.webp",
+          "width": 1280,
+          "bytes": 325048
+        },
+        {
+          "url": "/assets/responsive/5f6ffd781f34c49c-1920.webp",
+          "width": 1920,
+          "bytes": 763694
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgPicture1.png",
+      "originalBytes": 1115894,
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "url": "/assets/responsive/17b1e5a5999b52fd-320.webp",
+          "width": 320,
+          "bytes": 29242
+        },
+        {
+          "url": "/assets/responsive/17b1e5a5999b52fd-640.webp",
+          "width": 640,
+          "bytes": 101542
+        },
+        {
+          "url": "/assets/responsive/17b1e5a5999b52fd-1280.webp",
+          "width": 1280,
+          "bytes": 413932
+        },
+        {
+          "url": "/assets/responsive/17b1e5a5999b52fd-1920.webp",
+          "width": 1920,
+          "bytes": 720348
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/imgPicture4.png",
+      "originalBytes": 8872305,
+      "width": 4096,
+      "height": 2731,
+      "variants": [
+        {
+          "url": "/assets/responsive/60f6bde628a45808-320.webp",
+          "width": 320,
+          "bytes": 35132
+        },
+        {
+          "url": "/assets/responsive/60f6bde628a45808-640.webp",
+          "width": 640,
+          "bytes": 135540
+        },
+        {
+          "url": "/assets/responsive/60f6bde628a45808-1280.webp",
+          "width": 1280,
+          "bytes": 523218
+        },
+        {
+          "url": "/assets/responsive/60f6bde628a45808-2560.webp",
+          "width": 2560,
+          "bytes": 1938922
+        },
+        {
+          "url": "/assets/responsive/60f6bde628a45808-4096.webp",
+          "width": 4096,
+          "bytes": 4351648
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/b9bc6.png",
+      "originalBytes": 3923578,
+      "width": 2640,
+      "height": 1760,
+      "variants": [
+        {
+          "url": "/assets/responsive/e837122032bed2c0-640.webp",
+          "width": 640,
+          "bytes": 196648
+        },
+        {
+          "url": "/assets/responsive/e837122032bed2c0-1280.webp",
+          "width": 1280,
+          "bytes": 676156
+        },
+        {
+          "url": "/assets/responsive/e837122032bed2c0-1320.webp",
+          "width": 1320,
+          "bytes": 711432
+        },
+        {
+          "url": "/assets/responsive/e837122032bed2c0-2640.webp",
+          "width": 2640,
+          "bytes": 1869352
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/8ad15.png",
+      "originalBytes": 4344633,
+      "width": 4096,
+      "height": 2304,
+      "variants": [
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-640.webp",
+          "width": 640,
+          "bytes": 55676
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-1280.webp",
+          "width": 1280,
+          "bytes": 211536
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-1320.webp",
+          "width": 1320,
+          "bytes": 224212
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-2560.webp",
+          "width": 2560,
+          "bytes": 603668
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-2640.webp",
+          "width": 2640,
+          "bytes": 694892
+        },
+        {
+          "url": "/assets/responsive/0c684a6c3bdefe01-4096.webp",
+          "width": 4096,
+          "bytes": 1015646
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/7e884.png",
+      "originalBytes": 3979470,
+      "width": 3856,
+      "height": 2176,
+      "variants": [
+        {
+          "url": "/assets/responsive/1a7a5f35f3f0edfa-640.webp",
+          "width": 640,
+          "bytes": 122616
+        },
+        {
+          "url": "/assets/responsive/1a7a5f35f3f0edfa-1280.webp",
+          "width": 1280,
+          "bytes": 500388
+        },
+        {
+          "url": "/assets/responsive/1a7a5f35f3f0edfa-1320.webp",
+          "width": 1320,
+          "bytes": 537488
+        },
+        {
+          "url": "/assets/responsive/1a7a5f35f3f0edfa-2560.webp",
+          "width": 2560,
+          "bytes": 1931046
+        },
+        {
+          "url": "/assets/responsive/1a7a5f35f3f0edfa-2640.webp",
+          "width": 2640,
+          "bytes": 2254566
+        },
+        {
+          "url": "/assets/responsive/1a7a5f35f3f0edfa-3856.webp",
+          "width": 3856,
+          "bytes": 2584502
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/13717.png",
+      "originalBytes": 280297,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/0e63e9d17b28a5d3-786.webp",
+          "width": 786,
+          "bytes": 202852
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/9f3cf.png",
+      "originalBytes": 368708,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/9cc983bc07666e7b-786.webp",
+          "width": 786,
+          "bytes": 250632
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/89790.png",
+      "originalBytes": 939221,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/b733749eab45af42-640.webp",
+          "width": 640,
+          "bytes": 545704
+        },
+        {
+          "url": "/assets/responsive/b733749eab45af42-786.webp",
+          "width": 786,
+          "bytes": 675654
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/6cc0e.png",
+      "originalBytes": 831011,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/d814f86933f30131-640.webp",
+          "width": 640,
+          "bytes": 478346
+        },
+        {
+          "url": "/assets/responsive/d814f86933f30131-786.webp",
+          "width": 786,
+          "bytes": 495322
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/fc39a.png",
+      "originalBytes": 273939,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/b2a7d2513b7ebc16-786.webp",
+          "width": 786,
+          "bytes": 182464
+        }
+      ]
+    },
+    {
+      "original": "/assets/case-refresh/nspk-banner-ru.png",
+      "originalBytes": 723599,
+      "width": 3360,
+      "height": 2032,
+      "variants": [
+        {
+          "url": "/assets/responsive/9f32d13fd78db186-640.webp",
+          "width": 640,
+          "bytes": 53682
+        },
+        {
+          "url": "/assets/responsive/9f32d13fd78db186-1280.webp",
+          "width": 1280,
+          "bytes": 143502
+        },
+        {
+          "url": "/assets/responsive/9f32d13fd78db186-3360.webp",
+          "width": 3360,
+          "bytes": 332990
+        }
+      ]
+    },
+    {
+      "original": "/assets/case-refresh/nspk-hero-background.png",
+      "originalBytes": 404791,
+      "width": 683,
+      "height": 1024,
+      "variants": [
+        {
+          "url": "/assets/responsive/03096b437b384c59-640.webp",
+          "width": 640,
+          "bytes": 221546
+        },
+        {
+          "url": "/assets/responsive/03096b437b384c59-683.webp",
+          "width": 683,
+          "bytes": 231732
+        }
+      ]
+    },
+    {
+      "original": "/assets/case-refresh/nspk-hero-screen.png",
+      "originalBytes": 439124,
+      "width": 3840,
+      "height": 2150,
+      "variants": [
+        {
+          "url": "/assets/responsive/ada7ed9b9590ff40-640.webp",
+          "width": 640,
+          "bytes": 43088
+        },
+        {
+          "url": "/assets/responsive/ada7ed9b9590ff40-1280.webp",
+          "width": 1280,
+          "bytes": 111848
+        },
+        {
+          "url": "/assets/responsive/ada7ed9b9590ff40-3840.webp",
+          "width": 3840,
+          "bytes": 191030
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk/112-3936-imgImage261.png",
+      "originalBytes": 822039,
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "url": "/assets/responsive/65f601f98c3dfab6-640.webp",
+          "width": 640,
+          "bytes": 117222
+        },
+        {
+          "url": "/assets/responsive/65f601f98c3dfab6-1280.webp",
+          "width": 1280,
+          "bytes": 320068
+        },
+        {
+          "url": "/assets/responsive/65f601f98c3dfab6-1320.webp",
+          "width": 1320,
+          "bytes": 338612
+        },
+        {
+          "url": "/assets/responsive/65f601f98c3dfab6-1920.webp",
+          "width": 1920,
+          "bytes": 540898
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk/112-3936-imgImage262.png",
+      "originalBytes": 367808,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/9387a0da14b31ad0-640.webp",
+          "width": 640,
+          "bytes": 29804
+        },
+        {
+          "url": "/assets/responsive/9387a0da14b31ad0-1280.webp",
+          "width": 1280,
+          "bytes": 82040
+        },
+        {
+          "url": "/assets/responsive/9387a0da14b31ad0-1320.webp",
+          "width": 1320,
+          "bytes": 97816
+        },
+        {
+          "url": "/assets/responsive/9387a0da14b31ad0-3840.webp",
+          "width": 3840,
+          "bytes": 134582
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk/112-3936-imgImage263.png",
+      "originalBytes": 392379,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/1da4c534496763c9-640.webp",
+          "width": 640,
+          "bytes": 24682
+        },
+        {
+          "url": "/assets/responsive/1da4c534496763c9-1280.webp",
+          "width": 1280,
+          "bytes": 54882
+        },
+        {
+          "url": "/assets/responsive/1da4c534496763c9-1320.webp",
+          "width": 1320,
+          "bytes": 59516
+        },
+        {
+          "url": "/assets/responsive/1da4c534496763c9-3840.webp",
+          "width": 3840,
+          "bytes": 74528
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk/111-8727-imgImage56.png",
+      "originalBytes": 5913368,
+      "width": 4096,
+      "height": 2276,
+      "variants": [
+        {
+          "url": "/assets/responsive/a78a7fd66bedd723-640.webp",
+          "width": 640,
+          "bytes": 52274
+        },
+        {
+          "url": "/assets/responsive/a78a7fd66bedd723-1280.webp",
+          "width": 1280,
+          "bytes": 313418
+        },
+        {
+          "url": "/assets/responsive/a78a7fd66bedd723-1320.webp",
+          "width": 1320,
+          "bytes": 339260
+        },
+        {
+          "url": "/assets/responsive/a78a7fd66bedd723-2560.webp",
+          "width": 2560,
+          "bytes": 1113642
+        },
+        {
+          "url": "/assets/responsive/a78a7fd66bedd723-2640.webp",
+          "width": 2640,
+          "bytes": 1205462
+        },
+        {
+          "url": "/assets/responsive/a78a7fd66bedd723-4096.webp",
+          "width": 4096,
+          "bytes": 2228434
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk/112-4124-imgImage265.png",
+      "originalBytes": 433831,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/7ecbd5c17157b57f-640.webp",
+          "width": 640,
+          "bytes": 41160
+        },
+        {
+          "url": "/assets/responsive/7ecbd5c17157b57f-1280.webp",
+          "width": 1280,
+          "bytes": 109610
+        },
+        {
+          "url": "/assets/responsive/7ecbd5c17157b57f-1320.webp",
+          "width": 1320,
+          "bytes": 121084
+        },
+        {
+          "url": "/assets/responsive/7ecbd5c17157b57f-3840.webp",
+          "width": 3840,
+          "bytes": 186616
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk/112-4124-imgImage264.png",
+      "originalBytes": 928379,
+      "width": 4096,
+      "height": 2304,
+      "variants": [
+        {
+          "url": "/assets/responsive/28da4345e25bfc78-640.webp",
+          "width": 640,
+          "bytes": 37800
+        },
+        {
+          "url": "/assets/responsive/28da4345e25bfc78-1280.webp",
+          "width": 1280,
+          "bytes": 101440
+        },
+        {
+          "url": "/assets/responsive/28da4345e25bfc78-1320.webp",
+          "width": 1320,
+          "bytes": 112680
+        },
+        {
+          "url": "/assets/responsive/28da4345e25bfc78-2560.webp",
+          "width": 2560,
+          "bytes": 243532
+        },
+        {
+          "url": "/assets/responsive/28da4345e25bfc78-2640.webp",
+          "width": 2640,
+          "bytes": 267846
+        },
+        {
+          "url": "/assets/responsive/28da4345e25bfc78-4096.webp",
+          "width": 4096,
+          "bytes": 299060
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk/112-4163-imgImage72.png",
+      "originalBytes": 694955,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/88bfd795b19e4b6f-640.webp",
+          "width": 640,
+          "bytes": 53070
+        },
+        {
+          "url": "/assets/responsive/88bfd795b19e4b6f-1280.webp",
+          "width": 1280,
+          "bytes": 154314
+        },
+        {
+          "url": "/assets/responsive/88bfd795b19e4b6f-1320.webp",
+          "width": 1320,
+          "bytes": 161440
+        },
+        {
+          "url": "/assets/responsive/88bfd795b19e4b6f-3840.webp",
+          "width": 3840,
+          "bytes": 382676
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk/112-4163-imgImage266.png",
+      "originalBytes": 159332,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/3fb3210fbf00a9e3-640.webp",
+          "width": 640,
+          "bytes": 17716
+        },
+        {
+          "url": "/assets/responsive/3fb3210fbf00a9e3-3840.webp",
+          "width": 3840,
+          "bytes": 48838
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/468cd.png",
+      "originalBytes": 739769,
+      "width": 3360,
+      "height": 1890,
+      "variants": [
+        {
+          "url": "/assets/responsive/6d533638709e94c3-640.webp",
+          "width": 640,
+          "bytes": 58506
+        },
+        {
+          "url": "/assets/responsive/6d533638709e94c3-1280.webp",
+          "width": 1280,
+          "bytes": 166518
+        },
+        {
+          "url": "/assets/responsive/6d533638709e94c3-1320.webp",
+          "width": 1320,
+          "bytes": 174168
+        },
+        {
+          "url": "/assets/responsive/6d533638709e94c3-3360.webp",
+          "width": 3360,
+          "bytes": 409850
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/974ff.png",
+      "originalBytes": 877375,
+      "width": 4096,
+      "height": 2304,
+      "variants": [
+        {
+          "url": "/assets/responsive/434c61504d12640c-640.webp",
+          "width": 640,
+          "bytes": 29822
+        },
+        {
+          "url": "/assets/responsive/434c61504d12640c-1280.webp",
+          "width": 1280,
+          "bytes": 80576
+        },
+        {
+          "url": "/assets/responsive/434c61504d12640c-1320.webp",
+          "width": 1320,
+          "bytes": 82684
+        },
+        {
+          "url": "/assets/responsive/434c61504d12640c-2560.webp",
+          "width": 2560,
+          "bytes": 189264
+        },
+        {
+          "url": "/assets/responsive/434c61504d12640c-2640.webp",
+          "width": 2640,
+          "bytes": 201092
+        },
+        {
+          "url": "/assets/responsive/434c61504d12640c-4096.webp",
+          "width": 4096,
+          "bytes": 292650
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/af5a8.png",
+      "originalBytes": 848128,
+      "width": 1920,
+      "height": 1536,
+      "variants": [
+        {
+          "url": "/assets/responsive/acffdb1f7179c7b8-640.webp",
+          "width": 640,
+          "bytes": 64444
+        },
+        {
+          "url": "/assets/responsive/acffdb1f7179c7b8-1280.webp",
+          "width": 1280,
+          "bytes": 179042
+        },
+        {
+          "url": "/assets/responsive/acffdb1f7179c7b8-1920.webp",
+          "width": 1920,
+          "bytes": 262412
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/ec1dd.png",
+      "originalBytes": 592116,
+      "width": 3360,
+      "height": 2032,
+      "variants": [
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-640.webp",
+          "width": 640,
+          "bytes": 42014
+        },
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-1280.webp",
+          "width": 1280,
+          "bytes": 109418
+        },
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-2560.webp",
+          "width": 2560,
+          "bytes": 286196
+        },
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-3360.webp",
+          "width": 3360,
+          "bytes": 342444
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/38a45.png",
+      "originalBytes": 594421,
+      "width": 3360,
+      "height": 2032,
+      "variants": [
+        {
+          "url": "/assets/responsive/c4e32d3f9c14e3c4-640.webp",
+          "width": 640,
+          "bytes": 44420
+        },
+        {
+          "url": "/assets/responsive/c4e32d3f9c14e3c4-1280.webp",
+          "width": 1280,
+          "bytes": 114616
+        },
+        {
+          "url": "/assets/responsive/c4e32d3f9c14e3c4-2560.webp",
+          "width": 2560,
+          "bytes": 291902
+        },
+        {
+          "url": "/assets/responsive/c4e32d3f9c14e3c4-3360.webp",
+          "width": 3360,
+          "bytes": 339564
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/hero-ru-updated.png",
+      "originalBytes": 713146,
+      "width": 2736,
+      "height": 1638,
+      "variants": [
+        {
+          "url": "/assets/responsive/9e7657b01409ab35-640.webp",
+          "width": 640,
+          "bytes": 41338
+        },
+        {
+          "url": "/assets/responsive/9e7657b01409ab35-1320.webp",
+          "width": 1320,
+          "bytes": 125076
+        },
+        {
+          "url": "/assets/responsive/9e7657b01409ab35-2736.webp",
+          "width": 2736,
+          "bytes": 323924
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/slider-imgImage54.png",
+      "originalBytes": 629429,
+      "width": 2048,
+      "height": 1173,
+      "variants": [
+        {
+          "url": "/assets/responsive/81ddaa992d94cfac-640.webp",
+          "width": 640,
+          "bytes": 67394
+        },
+        {
+          "url": "/assets/responsive/81ddaa992d94cfac-1280.webp",
+          "width": 1280,
+          "bytes": 188636
+        },
+        {
+          "url": "/assets/responsive/81ddaa992d94cfac-1320.webp",
+          "width": 1320,
+          "bytes": 198430
+        },
+        {
+          "url": "/assets/responsive/81ddaa992d94cfac-2048.webp",
+          "width": 2048,
+          "bytes": 360814
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/slider-imgImage56.png",
+      "originalBytes": 251842,
+      "width": 1792,
+      "height": 892,
+      "variants": [
+        {
+          "url": "/assets/responsive/731b5052ebab7667-640.webp",
+          "width": 640,
+          "bytes": 33144
+        },
+        {
+          "url": "/assets/responsive/731b5052ebab7667-1280.webp",
+          "width": 1280,
+          "bytes": 96638
+        },
+        {
+          "url": "/assets/responsive/731b5052ebab7667-1320.webp",
+          "width": 1320,
+          "bytes": 101148
+        },
+        {
+          "url": "/assets/responsive/731b5052ebab7667-1792.webp",
+          "width": 1792,
+          "bytes": 147848
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/slider-imgImage55.png",
+      "originalBytes": 363392,
+      "width": 3584,
+      "height": 1770,
+      "variants": [
+        {
+          "url": "/assets/responsive/6c611525c7ac9359-640.webp",
+          "width": 640,
+          "bytes": 37042
+        },
+        {
+          "url": "/assets/responsive/6c611525c7ac9359-1280.webp",
+          "width": 1280,
+          "bytes": 105748
+        },
+        {
+          "url": "/assets/responsive/6c611525c7ac9359-1320.webp",
+          "width": 1320,
+          "bytes": 109900
+        },
+        {
+          "url": "/assets/responsive/6c611525c7ac9359-3584.webp",
+          "width": 3584,
+          "bytes": 188204
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage97.png",
+      "originalBytes": 372284,
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "url": "/assets/responsive/32d03850a3cd6d43-640.webp",
+          "width": 640,
+          "bytes": 47342
+        },
+        {
+          "url": "/assets/responsive/32d03850a3cd6d43-1280.webp",
+          "width": 1280,
+          "bytes": 129592
+        },
+        {
+          "url": "/assets/responsive/32d03850a3cd6d43-1320.webp",
+          "width": 1320,
+          "bytes": 136156
+        },
+        {
+          "url": "/assets/responsive/32d03850a3cd6d43-1920.webp",
+          "width": 1920,
+          "bytes": 166356
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage91.png",
+      "originalBytes": 116209,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/391ae1c25c8c8294-786.webp",
+          "width": 786,
+          "bytes": 67022
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage92.png",
+      "originalBytes": 83479,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/aac4d33502cfab5e-786.webp",
+          "width": 786,
+          "bytes": 30086
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage93.png",
+      "originalBytes": 102463,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/9959a2593298d70f-786.webp",
+          "width": 786,
+          "bytes": 56774
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage94.png",
+      "originalBytes": 42063,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/1a3abec4ae091d2b-393.webp",
+          "width": 393,
+          "bytes": 24812
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage95.png",
+      "originalBytes": 248517,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/responsive/f45c60d8256c065f-640.webp",
+          "width": 640,
+          "bytes": 98824
+        },
+        {
+          "url": "/assets/responsive/f45c60d8256c065f-1179.webp",
+          "width": 1179,
+          "bytes": 140146
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage96.png",
+      "originalBytes": 124580,
+      "width": 1179,
+      "height": 2460,
+      "variants": [
+        {
+          "url": "/assets/responsive/2079ff1dbdce1815-1179.webp",
+          "width": 1179,
+          "bytes": 50342
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage78.png",
+      "originalBytes": 160461,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/547926637dda3835-320.webp",
+          "width": 320,
+          "bytes": 39732
+        },
+        {
+          "url": "/assets/responsive/547926637dda3835-786.webp",
+          "width": 786,
+          "bytes": 101222
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage81.png",
+      "originalBytes": 294345,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/responsive/dca47d5ecd3c637e-320.webp",
+          "width": 320,
+          "bytes": 39602
+        },
+        {
+          "url": "/assets/responsive/dca47d5ecd3c637e-640.webp",
+          "width": 640,
+          "bytes": 102484
+        },
+        {
+          "url": "/assets/responsive/dca47d5ecd3c637e-1179.webp",
+          "width": 1179,
+          "bytes": 179008
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage82.png",
+      "originalBytes": 171398,
+      "width": 590,
+      "height": 1278,
+      "variants": [
+        {
+          "url": "/assets/responsive/e26e20ae718aca11-320.webp",
+          "width": 320,
+          "bytes": 49830
+        },
+        {
+          "url": "/assets/responsive/e26e20ae718aca11-590.webp",
+          "width": 590,
+          "bytes": 75306
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage83.png",
+      "originalBytes": 137049,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/d154862ab56ef39a-786.webp",
+          "width": 786,
+          "bytes": 36854
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage86.png",
+      "originalBytes": 220255,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/responsive/230bb311d95f58d3-320.webp",
+          "width": 320,
+          "bytes": 60312
+        },
+        {
+          "url": "/assets/responsive/230bb311d95f58d3-1179.webp",
+          "width": 1179,
+          "bytes": 66984
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage87.png",
+      "originalBytes": 214834,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/responsive/26fb54016bb51117-320.webp",
+          "width": 320,
+          "bytes": 52030
+        },
+        {
+          "url": "/assets/responsive/26fb54016bb51117-1179.webp",
+          "width": 1179,
+          "bytes": 101142
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage88.png",
+      "originalBytes": 236235,
+      "width": 1572,
+      "height": 3408,
+      "variants": [
+        {
+          "url": "/assets/responsive/80e0bbbe5c67d202-320.webp",
+          "width": 320,
+          "bytes": 53768
+        },
+        {
+          "url": "/assets/responsive/80e0bbbe5c67d202-1572.webp",
+          "width": 1572,
+          "bytes": 81450
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb/imgImage85.png",
+      "originalBytes": 34875,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/a1923402e2ae38f1-393.webp",
+          "width": 393,
+          "bytes": 9266
+        }
+      ]
+    },
+    {
+      "original": "/assets/case-refresh/alfa-phone-ru.png",
+      "originalBytes": 495467,
+      "width": 1289,
+      "height": 1602,
+      "variants": [
+        {
+          "url": "/assets/responsive/967f6acd9765fdc0-640.webp",
+          "width": 640,
+          "bytes": 111462
+        },
+        {
+          "url": "/assets/responsive/967f6acd9765fdc0-1289.webp",
+          "width": 1289,
+          "bytes": 270810
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-en/vtb.png",
+      "originalBytes": 3583291,
+      "width": 2159,
+      "height": 1537,
+      "variants": [
+        {
+          "url": "/assets/responsive/b58848637984f100-640.webp",
+          "width": 640,
+          "bytes": 196240
+        },
+        {
+          "url": "/assets/responsive/b58848637984f100-960.webp",
+          "width": 960,
+          "bytes": 456890
+        },
+        {
+          "url": "/assets/responsive/b58848637984f100-1280.webp",
+          "width": 1280,
+          "bytes": 863370
+        },
+        {
+          "url": "/assets/responsive/b58848637984f100-1920.webp",
+          "width": 1920,
+          "bytes": 2125528
+        },
+        {
+          "url": "/assets/responsive/b58848637984f100-2159.webp",
+          "width": 2159,
+          "bytes": 2403642
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-en/alfa.png",
+      "originalBytes": 20534496,
+      "width": 4096,
+      "height": 2731,
+      "variants": [
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-640.webp",
+          "width": 640,
+          "bytes": 287900
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-960.webp",
+          "width": 960,
+          "bytes": 680966
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-1280.webp",
+          "width": 1280,
+          "bytes": 1170488
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-1920.webp",
+          "width": 1920,
+          "bytes": 2534136
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-2560.webp",
+          "width": 2560,
+          "bytes": 4475432
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-4096.webp",
+          "width": 4096,
+          "bytes": 10977306
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-en/wasd.png",
+      "originalBytes": 11368420,
+      "width": 4096,
+      "height": 2731,
+      "variants": [
+        {
+          "url": "/assets/responsive/a634d42031597b1d-640.webp",
+          "width": 640,
+          "bytes": 105510
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-960.webp",
+          "width": 960,
+          "bytes": 225132
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-1280.webp",
+          "width": 1280,
+          "bytes": 417568
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-1920.webp",
+          "width": 1920,
+          "bytes": 896720
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-2560.webp",
+          "width": 2560,
+          "bytes": 2009852
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-4096.webp",
+          "width": 4096,
+          "bytes": 4531506
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage54Eng.png",
+      "originalBytes": 754315,
+      "width": 2636,
+      "height": 1464,
+      "variants": [
+        {
+          "url": "/assets/responsive/1af93e70cdf8f710-640.webp",
+          "width": 640,
+          "bytes": 52802
+        },
+        {
+          "url": "/assets/responsive/1af93e70cdf8f710-1280.webp",
+          "width": 1280,
+          "bytes": 155782
+        },
+        {
+          "url": "/assets/responsive/1af93e70cdf8f710-1320.webp",
+          "width": 1320,
+          "bytes": 161652
+        },
+        {
+          "url": "/assets/responsive/1af93e70cdf8f710-2636.webp",
+          "width": 2636,
+          "bytes": 393044
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/research.png",
+      "originalBytes": 224375,
+      "width": 1320,
+      "height": 742,
+      "variants": [
+        {
+          "url": "/assets/responsive/60ad7a57603c6202-640.webp",
+          "width": 640,
+          "bytes": 48390
+        },
+        {
+          "url": "/assets/responsive/60ad7a57603c6202-1320.webp",
+          "width": 1320,
+          "bytes": 127022
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage91Eng.png",
+      "originalBytes": 92581,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/d4c4d6edbbe7454b-393.webp",
+          "width": 393,
+          "bytes": 57706
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage91Eng1.png",
+      "originalBytes": 101061,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/6b8f0b55db9acf93-393.webp",
+          "width": 393,
+          "bytes": 63124
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage91Eng2.png",
+      "originalBytes": 100414,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/974be999e7427f78-393.webp",
+          "width": 393,
+          "bytes": 61354
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage88.png",
+      "originalBytes": 71759,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/f9b23b04699caefc-320.webp",
+          "width": 320,
+          "bytes": 41898
+        },
+        {
+          "url": "/assets/responsive/f9b23b04699caefc-393.webp",
+          "width": 393,
+          "bytes": 42110
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage78.png",
+      "originalBytes": 238336,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/25e337137f141ee4-320.webp",
+          "width": 320,
+          "bytes": 65662
+        },
+        {
+          "url": "/assets/responsive/25e337137f141ee4-786.webp",
+          "width": 786,
+          "bytes": 150628
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage81.png",
+      "originalBytes": 335618,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/19becaa5e8d26cdf-320.webp",
+          "width": 320,
+          "bytes": 69574
+        },
+        {
+          "url": "/assets/responsive/19becaa5e8d26cdf-640.webp",
+          "width": 640,
+          "bytes": 201590
+        },
+        {
+          "url": "/assets/responsive/19becaa5e8d26cdf-786.webp",
+          "width": 786,
+          "bytes": 218750
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage82.png",
+      "originalBytes": 136106,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/1c17930e255eb967-320.webp",
+          "width": 320,
+          "bytes": 40234
+        },
+        {
+          "url": "/assets/responsive/1c17930e255eb967-786.webp",
+          "width": 786,
+          "bytes": 41234
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage83.png",
+      "originalBytes": 45334,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/2990a339c5aafb89-393.webp",
+          "width": 393,
+          "bytes": 26818
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage86.png",
+      "originalBytes": 442216,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/636f033202c62079-320.webp",
+          "width": 320,
+          "bytes": 79058
+        },
+        {
+          "url": "/assets/responsive/636f033202c62079-640.webp",
+          "width": 640,
+          "bytes": 255618
+        },
+        {
+          "url": "/assets/responsive/636f033202c62079-786.webp",
+          "width": 786,
+          "bytes": 285372
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage87.png",
+      "originalBytes": 263320,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/a4d3dde6b85610fb-320.webp",
+          "width": 320,
+          "bytes": 66454
+        },
+        {
+          "url": "/assets/responsive/a4d3dde6b85610fb-786.webp",
+          "width": 786,
+          "bytes": 122018
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage85.png",
+      "originalBytes": 290894,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/b27421439da6c41f-320.webp",
+          "width": 320,
+          "bytes": 160988
+        },
+        {
+          "url": "/assets/responsive/b27421439da6c41f-393.webp",
+          "width": 393,
+          "bytes": 196550
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage91Eng3.png",
+      "originalBytes": 219833,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/79e879eeddc20968-786.webp",
+          "width": 786,
+          "bytes": 132174
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage91Eng4.png",
+      "originalBytes": 206910,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/e1b5c8859474ed48-786.webp",
+          "width": 786,
+          "bytes": 122026
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/imgImage73.png",
+      "originalBytes": 1348947,
+      "width": 1112,
+      "height": 1404,
+      "variants": [
+        {
+          "url": "/assets/responsive/745023d77f6e9a3a-640.webp",
+          "width": 640,
+          "bytes": 321556
+        },
+        {
+          "url": "/assets/responsive/745023d77f6e9a3a-1112.webp",
+          "width": 1112,
+          "bytes": 726340
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/846d2.png",
+      "originalBytes": 1792878,
+      "width": 1536,
+      "height": 1024,
+      "variants": [
+        {
+          "url": "/assets/responsive/2055e33d74302715-640.webp",
+          "width": 640,
+          "bytes": 244434
+        },
+        {
+          "url": "/assets/responsive/2055e33d74302715-1280.webp",
+          "width": 1280,
+          "bytes": 913410
+        },
+        {
+          "url": "/assets/responsive/2055e33d74302715-1320.webp",
+          "width": 1320,
+          "bytes": 969224
+        },
+        {
+          "url": "/assets/responsive/2055e33d74302715-1536.webp",
+          "width": 1536,
+          "bytes": 1199322
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/813fe.png",
+      "originalBytes": 3551884,
+      "width": 3471,
+      "height": 2262,
+      "variants": [
+        {
+          "url": "/assets/responsive/f0f4906bbd2b5049-640.webp",
+          "width": 640,
+          "bytes": 141878
+        },
+        {
+          "url": "/assets/responsive/f0f4906bbd2b5049-1280.webp",
+          "width": 1280,
+          "bytes": 390200
+        },
+        {
+          "url": "/assets/responsive/f0f4906bbd2b5049-1320.webp",
+          "width": 1320,
+          "bytes": 405980
+        },
+        {
+          "url": "/assets/responsive/f0f4906bbd2b5049-2560.webp",
+          "width": 2560,
+          "bytes": 1672940
+        },
+        {
+          "url": "/assets/responsive/f0f4906bbd2b5049-2640.webp",
+          "width": 2640,
+          "bytes": 1749324
+        },
+        {
+          "url": "/assets/responsive/f0f4906bbd2b5049-3471.webp",
+          "width": 3471,
+          "bytes": 2207960
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/5db4b.png",
+      "originalBytes": 288929,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/9bc759a01a3371f8-786.webp",
+          "width": 786,
+          "bytes": 204742
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/2685b.png",
+      "originalBytes": 937252,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/7698efd790c4e3cf-640.webp",
+          "width": 640,
+          "bytes": 541068
+        },
+        {
+          "url": "/assets/responsive/7698efd790c4e3cf-786.webp",
+          "width": 786,
+          "bytes": 677500
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/62f34.png",
+      "originalBytes": 724380,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/956e5b88fcdb0ab4-640.webp",
+          "width": 640,
+          "bytes": 478604
+        },
+        {
+          "url": "/assets/responsive/956e5b88fcdb0ab4-786.webp",
+          "width": 786,
+          "bytes": 504234
+        }
+      ]
+    },
+    {
+      "original": "/assets/wasd-update/23521.png",
+      "originalBytes": 276063,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/73f45a4113d86644-786.webp",
+          "width": 786,
+          "bytes": 180996
+        }
+      ]
+    },
+    {
+      "original": "/assets/case-refresh/nspk-banner-en.png",
+      "originalBytes": 622782,
+      "width": 3360,
+      "height": 2008,
+      "variants": [
+        {
+          "url": "/assets/responsive/eaf0bffc97532575-640.webp",
+          "width": 640,
+          "bytes": 43704
+        },
+        {
+          "url": "/assets/responsive/eaf0bffc97532575-1280.webp",
+          "width": 1280,
+          "bytes": 117458
+        },
+        {
+          "url": "/assets/responsive/eaf0bffc97532575-2560.webp",
+          "width": 2560,
+          "bytes": 302404
+        },
+        {
+          "url": "/assets/responsive/eaf0bffc97532575-3360.webp",
+          "width": 3360,
+          "bytes": 310328
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/cpvt-head.png",
+      "originalBytes": 1920734,
+      "width": 2736,
+      "height": 1532,
+      "variants": [
+        {
+          "url": "/assets/responsive/2470e5fa6d97aef4-640.webp",
+          "width": 640,
+          "bytes": 91750
+        },
+        {
+          "url": "/assets/responsive/2470e5fa6d97aef4-1280.webp",
+          "width": 1280,
+          "bytes": 329976
+        },
+        {
+          "url": "/assets/responsive/2470e5fa6d97aef4-1320.webp",
+          "width": 1320,
+          "bytes": 341636
+        },
+        {
+          "url": "/assets/responsive/2470e5fa6d97aef4-2736.webp",
+          "width": 2736,
+          "bytes": 1067516
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/a89fe.png",
+      "originalBytes": 742391,
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "url": "/assets/responsive/a61d74154c649f20-640.webp",
+          "width": 640,
+          "bytes": 109890
+        },
+        {
+          "url": "/assets/responsive/a61d74154c649f20-1280.webp",
+          "width": 1280,
+          "bytes": 300784
+        },
+        {
+          "url": "/assets/responsive/a61d74154c649f20-1320.webp",
+          "width": 1320,
+          "bytes": 316894
+        },
+        {
+          "url": "/assets/responsive/a61d74154c649f20-1920.webp",
+          "width": 1920,
+          "bytes": 481374
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/a64ed.png",
+      "originalBytes": 350986,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/294e9de1ec32b9ca-640.webp",
+          "width": 640,
+          "bytes": 23632
+        },
+        {
+          "url": "/assets/responsive/294e9de1ec32b9ca-1280.webp",
+          "width": 1280,
+          "bytes": 67104
+        },
+        {
+          "url": "/assets/responsive/294e9de1ec32b9ca-3840.webp",
+          "width": 3840,
+          "bytes": 108484
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/9ce9e.png",
+      "originalBytes": 225890,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/c1dfb5ace44a59c5-640.webp",
+          "width": 640,
+          "bytes": 20056
+        },
+        {
+          "url": "/assets/responsive/c1dfb5ace44a59c5-1280.webp",
+          "width": 1280,
+          "bytes": 50008
+        },
+        {
+          "url": "/assets/responsive/c1dfb5ace44a59c5-1320.webp",
+          "width": 1320,
+          "bytes": 53296
+        },
+        {
+          "url": "/assets/responsive/c1dfb5ace44a59c5-3840.webp",
+          "width": 3840,
+          "bytes": 68676
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/9e793.png",
+      "originalBytes": 2032260,
+      "width": 3360,
+      "height": 1890,
+      "variants": [
+        {
+          "url": "/assets/responsive/df8c74b1bf9f6302-640.webp",
+          "width": 640,
+          "bytes": 50910
+        },
+        {
+          "url": "/assets/responsive/df8c74b1bf9f6302-1280.webp",
+          "width": 1280,
+          "bytes": 269884
+        },
+        {
+          "url": "/assets/responsive/df8c74b1bf9f6302-1320.webp",
+          "width": 1320,
+          "bytes": 292966
+        },
+        {
+          "url": "/assets/responsive/df8c74b1bf9f6302-2640.webp",
+          "width": 2640,
+          "bytes": 1027708
+        },
+        {
+          "url": "/assets/responsive/df8c74b1bf9f6302-3360.webp",
+          "width": 3360,
+          "bytes": 1194024
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/0b2a2.png",
+      "originalBytes": 383133,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/b26ef5a38c7f4906-640.webp",
+          "width": 640,
+          "bytes": 34866
+        },
+        {
+          "url": "/assets/responsive/b26ef5a38c7f4906-1280.webp",
+          "width": 1280,
+          "bytes": 90864
+        },
+        {
+          "url": "/assets/responsive/b26ef5a38c7f4906-1320.webp",
+          "width": 1320,
+          "bytes": 100624
+        },
+        {
+          "url": "/assets/responsive/b26ef5a38c7f4906-3840.webp",
+          "width": 3840,
+          "bytes": 157854
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/91202.png",
+      "originalBytes": 849671,
+      "width": 4096,
+      "height": 2304,
+      "variants": [
+        {
+          "url": "/assets/responsive/b5cf4ed64311ca84-640.webp",
+          "width": 640,
+          "bytes": 32602
+        },
+        {
+          "url": "/assets/responsive/b5cf4ed64311ca84-1280.webp",
+          "width": 1280,
+          "bytes": 86640
+        },
+        {
+          "url": "/assets/responsive/b5cf4ed64311ca84-1320.webp",
+          "width": 1320,
+          "bytes": 96324
+        },
+        {
+          "url": "/assets/responsive/b5cf4ed64311ca84-2560.webp",
+          "width": 2560,
+          "bytes": 208450
+        },
+        {
+          "url": "/assets/responsive/b5cf4ed64311ca84-2640.webp",
+          "width": 2640,
+          "bytes": 227670
+        },
+        {
+          "url": "/assets/responsive/b5cf4ed64311ca84-4096.webp",
+          "width": 4096,
+          "bytes": 258324
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/6ad4b.png",
+      "originalBytes": 1488092,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/fd754cd8bbdea4e8-640.webp",
+          "width": 640,
+          "bytes": 50432
+        },
+        {
+          "url": "/assets/responsive/fd754cd8bbdea4e8-1280.webp",
+          "width": 1280,
+          "bytes": 149932
+        },
+        {
+          "url": "/assets/responsive/fd754cd8bbdea4e8-1320.webp",
+          "width": 1320,
+          "bytes": 161340
+        },
+        {
+          "url": "/assets/responsive/fd754cd8bbdea4e8-2560.webp",
+          "width": 2560,
+          "bytes": 424610
+        },
+        {
+          "url": "/assets/responsive/fd754cd8bbdea4e8-2640.webp",
+          "width": 2640,
+          "bytes": 450334
+        },
+        {
+          "url": "/assets/responsive/fd754cd8bbdea4e8-3840.webp",
+          "width": 3840,
+          "bytes": 572968
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/b1fd6.png",
+      "originalBytes": 1471840,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/6a51f89d1d953cfb-640.webp",
+          "width": 640,
+          "bytes": 49662
+        },
+        {
+          "url": "/assets/responsive/6a51f89d1d953cfb-1280.webp",
+          "width": 1280,
+          "bytes": 149314
+        },
+        {
+          "url": "/assets/responsive/6a51f89d1d953cfb-1320.webp",
+          "width": 1320,
+          "bytes": 159484
+        },
+        {
+          "url": "/assets/responsive/6a51f89d1d953cfb-2560.webp",
+          "width": 2560,
+          "bytes": 423800
+        },
+        {
+          "url": "/assets/responsive/6a51f89d1d953cfb-2640.webp",
+          "width": 2640,
+          "bytes": 446964
+        },
+        {
+          "url": "/assets/responsive/6a51f89d1d953cfb-3840.webp",
+          "width": 3840,
+          "bytes": 571710
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/f0d17.png",
+      "originalBytes": 144584,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/ba9169b4d0e3609c-640.webp",
+          "width": 640,
+          "bytes": 14050
+        },
+        {
+          "url": "/assets/responsive/ba9169b4d0e3609c-1280.webp",
+          "width": 1280,
+          "bytes": 40210
+        },
+        {
+          "url": "/assets/responsive/ba9169b4d0e3609c-3840.webp",
+          "width": 3840,
+          "bytes": 42088
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/773aa.png",
+      "originalBytes": 696079,
+      "width": 3360,
+      "height": 1890,
+      "variants": [
+        {
+          "url": "/assets/responsive/e72ba8c7be240de1-640.webp",
+          "width": 640,
+          "bytes": 54932
+        },
+        {
+          "url": "/assets/responsive/e72ba8c7be240de1-1280.webp",
+          "width": 1280,
+          "bytes": 154864
+        },
+        {
+          "url": "/assets/responsive/e72ba8c7be240de1-1320.webp",
+          "width": 1320,
+          "bytes": 160988
+        },
+        {
+          "url": "/assets/responsive/e72ba8c7be240de1-3360.webp",
+          "width": 3360,
+          "bytes": 374672
+        }
+      ]
+    },
+    {
+      "original": "/assets/nspk-update/772ea.png",
+      "originalBytes": 262425,
+      "width": 3840,
+      "height": 2160,
+      "variants": [
+        {
+          "url": "/assets/responsive/239c62d8ff816e67-640.webp",
+          "width": 640,
+          "bytes": 25156
+        },
+        {
+          "url": "/assets/responsive/239c62d8ff816e67-1280.webp",
+          "width": 1280,
+          "bytes": 58478
+        },
+        {
+          "url": "/assets/responsive/239c62d8ff816e67-1320.webp",
+          "width": 1320,
+          "bytes": 61924
+        },
+        {
+          "url": "/assets/responsive/239c62d8ff816e67-3840.webp",
+          "width": 3840,
+          "bytes": 123080
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/ec1dd.png",
+      "originalBytes": 592116,
+      "width": 3360,
+      "height": 2032,
+      "variants": [
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-640.webp",
+          "width": 640,
+          "bytes": 42014
+        },
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-1280.webp",
+          "width": 1280,
+          "bytes": 109418
+        },
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-1320.webp",
+          "width": 1320,
+          "bytes": 112028
+        },
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-2560.webp",
+          "width": 2560,
+          "bytes": 286196
+        },
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-2640.webp",
+          "width": 2640,
+          "bytes": 295346
+        },
+        {
+          "url": "/assets/responsive/6c56ecc5ad567f2d-3360.webp",
+          "width": 3360,
+          "bytes": 342444
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/a3a67.png",
+      "originalBytes": 217257,
+      "width": 1887,
+      "height": 982,
+      "variants": [
+        {
+          "url": "/assets/responsive/6cf0e56068cd1f12-640.webp",
+          "width": 640,
+          "bytes": 37084
+        },
+        {
+          "url": "/assets/responsive/6cf0e56068cd1f12-1887.webp",
+          "width": 1887,
+          "bytes": 45386
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/03712.png",
+      "originalBytes": 629429,
+      "width": 2048,
+      "height": 1173,
+      "variants": [
+        {
+          "url": "/assets/responsive/81ddaa992d94cfac-640.webp",
+          "width": 640,
+          "bytes": 67394
+        },
+        {
+          "url": "/assets/responsive/81ddaa992d94cfac-1280.webp",
+          "width": 1280,
+          "bytes": 188636
+        },
+        {
+          "url": "/assets/responsive/81ddaa992d94cfac-1320.webp",
+          "width": 1320,
+          "bytes": 198430
+        },
+        {
+          "url": "/assets/responsive/81ddaa992d94cfac-2048.webp",
+          "width": 2048,
+          "bytes": 360814
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/68892.png",
+      "originalBytes": 1083401,
+      "width": 1536,
+      "height": 880,
+      "variants": [
+        {
+          "url": "/assets/responsive/e780904ee4405250-640.webp",
+          "width": 640,
+          "bytes": 177338
+        },
+        {
+          "url": "/assets/responsive/e780904ee4405250-1280.webp",
+          "width": 1280,
+          "bytes": 574718
+        },
+        {
+          "url": "/assets/responsive/e780904ee4405250-1320.webp",
+          "width": 1320,
+          "bytes": 621404
+        },
+        {
+          "url": "/assets/responsive/e780904ee4405250-1536.webp",
+          "width": 1536,
+          "bytes": 746396
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/867ef.png",
+      "originalBytes": 296996,
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "url": "/assets/responsive/278fb10416bad229-640.webp",
+          "width": 640,
+          "bytes": 45862
+        },
+        {
+          "url": "/assets/responsive/278fb10416bad229-1280.webp",
+          "width": 1280,
+          "bytes": 125914
+        },
+        {
+          "url": "/assets/responsive/278fb10416bad229-1320.webp",
+          "width": 1320,
+          "bytes": 132532
+        },
+        {
+          "url": "/assets/responsive/278fb10416bad229-1920.webp",
+          "width": 1920,
+          "bytes": 164050
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/4ce54.png",
+      "originalBytes": 95865,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/1a150afccf2b3883-786.webp",
+          "width": 786,
+          "bytes": 36318
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/ace65.png",
+      "originalBytes": 84956,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/3ba53e1b638c5696-786.webp",
+          "width": 786,
+          "bytes": 31194
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/2ad32.png",
+      "originalBytes": 101008,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/dece3a23a17292c6-786.webp",
+          "width": 786,
+          "bytes": 57330
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/a2602.png",
+      "originalBytes": 40594,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/2fe7009004d4fd6a-393.webp",
+          "width": 393,
+          "bytes": 23570
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/cef83.png",
+      "originalBytes": 279821,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/responsive/e115980adfb038b7-640.webp",
+          "width": 640,
+          "bytes": 101594
+        },
+        {
+          "url": "/assets/responsive/e115980adfb038b7-1179.webp",
+          "width": 1179,
+          "bytes": 159532
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/eeee0.png",
+      "originalBytes": 122572,
+      "width": 1179,
+      "height": 2460,
+      "variants": [
+        {
+          "url": "/assets/responsive/e69473e4430412dd-1179.webp",
+          "width": 1179,
+          "bytes": 63918
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/77af4.png",
+      "originalBytes": 172052,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/a2cf75dc470175f8-320.webp",
+          "width": 320,
+          "bytes": 40696
+        },
+        {
+          "url": "/assets/responsive/a2cf75dc470175f8-786.webp",
+          "width": 786,
+          "bytes": 119978
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/a06b9.png",
+      "originalBytes": 294961,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/responsive/b62c0d5243c93916-320.webp",
+          "width": 320,
+          "bytes": 38394
+        },
+        {
+          "url": "/assets/responsive/b62c0d5243c93916-640.webp",
+          "width": 640,
+          "bytes": 101174
+        },
+        {
+          "url": "/assets/responsive/b62c0d5243c93916-1179.webp",
+          "width": 1179,
+          "bytes": 179272
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/1bece.png",
+      "originalBytes": 243678,
+      "width": 590,
+      "height": 1278,
+      "variants": [
+        {
+          "url": "/assets/responsive/0a06bd9099761ebf-320.webp",
+          "width": 320,
+          "bytes": 70878
+        },
+        {
+          "url": "/assets/responsive/0a06bd9099761ebf-590.webp",
+          "width": 590,
+          "bytes": 149920
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/610e4.png",
+      "originalBytes": 99611,
+      "width": 786,
+      "height": 1704,
+      "variants": [
+        {
+          "url": "/assets/responsive/3c34e5329778eef8-786.webp",
+          "width": 786,
+          "bytes": 34666
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/d32dd.png",
+      "originalBytes": 234838,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/responsive/02efb58d5cb18e8f-320.webp",
+          "width": 320,
+          "bytes": 58850
+        },
+        {
+          "url": "/assets/responsive/02efb58d5cb18e8f-1179.webp",
+          "width": 1179,
+          "bytes": 65850
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/94637.png",
+      "originalBytes": 216590,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/responsive/d5d1ae618a2bac7a-320.webp",
+          "width": 320,
+          "bytes": 50816
+        },
+        {
+          "url": "/assets/responsive/d5d1ae618a2bac7a-1179.webp",
+          "width": 1179,
+          "bytes": 100374
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/1dce3.png",
+      "originalBytes": 229246,
+      "width": 1572,
+      "height": 3408,
+      "variants": [
+        {
+          "url": "/assets/responsive/1229ad808e7a6d1c-320.webp",
+          "width": 320,
+          "bytes": 45960
+        },
+        {
+          "url": "/assets/responsive/1229ad808e7a6d1c-1572.webp",
+          "width": 1572,
+          "bytes": 75146
+        }
+      ]
+    },
+    {
+      "original": "/assets/vtb-en/0d3c6.png",
+      "originalBytes": 26917,
+      "width": 393,
+      "height": 852,
+      "variants": [
+        {
+          "url": "/assets/responsive/2452d0edb4113fca-393.webp",
+          "width": 393,
+          "bytes": 9198
+        }
+      ]
+    },
+    {
+      "original": "/assets/case-refresh/alfa-phone-en.png",
+      "originalBytes": 491178,
+      "width": 1288,
+      "height": 1602,
+      "variants": [
+        {
+          "url": "/assets/responsive/f047ea05f8673698-640.webp",
+          "width": 640,
+          "bytes": 109552
+        },
+        {
+          "url": "/assets/responsive/f047ea05f8673698-1288.webp",
+          "width": 1288,
+          "bytes": 268440
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa-cover.png",
+      "originalBytes": 6705870,
+      "width": 2988,
+      "height": 1779,
+      "variants": [
+        {
+          "url": "/assets/responsive/4bd889fac18aada8-640.webp",
+          "width": 640,
+          "bytes": 253904
+        },
+        {
+          "url": "/assets/responsive/4bd889fac18aada8-1280.webp",
+          "width": 1280,
+          "bytes": 925602
+        },
+        {
+          "url": "/assets/responsive/4bd889fac18aada8-1320.webp",
+          "width": 1320,
+          "bytes": 980100
+        },
+        {
+          "url": "/assets/responsive/4bd889fac18aada8-2560.webp",
+          "width": 2560,
+          "bytes": 3486772
+        },
+        {
+          "url": "/assets/responsive/4bd889fac18aada8-2640.webp",
+          "width": 2640,
+          "bytes": 3683040
+        },
+        {
+          "url": "/assets/responsive/4bd889fac18aada8-2988.webp",
+          "width": 2988,
+          "bytes": 4505434
+        }
+      ]
+    },
+    {
+      "original": "/assets/alfa/en/intro-poster.png",
+      "originalBytes": 241302,
+      "width": 1482,
+      "height": 872,
+      "variants": [
+        {
+          "url": "/assets/responsive/bd487096a17169ba-640.webp",
+          "width": 640,
+          "bytes": 27146
+        },
+        {
+          "url": "/assets/responsive/bd487096a17169ba-1280.webp",
+          "width": 1280,
+          "bytes": 75900
+        },
+        {
+          "url": "/assets/responsive/bd487096a17169ba-1482.webp",
+          "width": 1482,
+          "bytes": 83138
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-refresh/wasd-ru.png",
+      "originalBytes": 11311617,
+      "width": 4096,
+      "height": 2731,
+      "figma": {
+        "fileKey": "rGW1jeijHl87JxPnjF9Rjh",
+        "nodeId": "394:11384"
+      },
+      "variants": [
+        {
+          "url": "/assets/responsive/7918e57df57f0521-480.webp",
+          "width": 480,
+          "bytes": 58972
+        },
+        {
+          "url": "/assets/responsive/7918e57df57f0521-640.webp",
+          "width": 640,
+          "bytes": 104684
+        },
+        {
+          "url": "/assets/responsive/7918e57df57f0521-960.webp",
+          "width": 960,
+          "bytes": 228610
+        },
+        {
+          "url": "/assets/responsive/7918e57df57f0521-1280.webp",
+          "width": 1280,
+          "bytes": 418862
+        },
+        {
+          "url": "/assets/responsive/7918e57df57f0521-1920.webp",
+          "width": 1920,
+          "bytes": 911058
+        },
+        {
+          "url": "/assets/responsive/7918e57df57f0521-2560.webp",
+          "width": 2560,
+          "bytes": 2005710
+        },
+        {
+          "url": "/assets/responsive/7918e57df57f0521-3200.webp",
+          "width": 3200,
+          "bytes": 3160888
+        },
+        {
+          "url": "/assets/responsive/7918e57df57f0521-4096.webp",
+          "width": 4096,
+          "bytes": 4506820
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-refresh/alfa-ru.png",
+      "originalBytes": 16980355,
+      "width": 4096,
+      "height": 2731,
+      "figma": {
+        "fileKey": "rGW1jeijHl87JxPnjF9Rjh",
+        "nodeId": "394:11400"
+      },
+      "variants": [
+        {
+          "url": "/assets/responsive/1cee8ac7062e6f09-480.webp",
+          "width": 480,
+          "bytes": 151744
+        },
+        {
+          "url": "/assets/responsive/1cee8ac7062e6f09-640.webp",
+          "width": 640,
+          "bytes": 300502
+        },
+        {
+          "url": "/assets/responsive/1cee8ac7062e6f09-960.webp",
+          "width": 960,
+          "bytes": 655104
+        },
+        {
+          "url": "/assets/responsive/1cee8ac7062e6f09-1280.webp",
+          "width": 1280,
+          "bytes": 1136638
+        },
+        {
+          "url": "/assets/responsive/1cee8ac7062e6f09-1920.webp",
+          "width": 1920,
+          "bytes": 2441170
+        },
+        {
+          "url": "/assets/responsive/1cee8ac7062e6f09-2560.webp",
+          "width": 2560,
+          "bytes": 4442456
+        },
+        {
+          "url": "/assets/responsive/1cee8ac7062e6f09-3200.webp",
+          "width": 3200,
+          "bytes": 6678478
+        },
+        {
+          "url": "/assets/responsive/1cee8ac7062e6f09-4096.webp",
+          "width": 4096,
+          "bytes": 10639002
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-refresh/nspk-ru.png",
+      "originalBytes": 9037876,
+      "width": 4096,
+      "height": 2731,
+      "figma": {
+        "fileKey": "rGW1jeijHl87JxPnjF9Rjh",
+        "nodeId": "394:11416"
+      },
+      "variants": [
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-480.webp",
+          "width": 480,
+          "bytes": 34032
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-640.webp",
+          "width": 640,
+          "bytes": 57880
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-960.webp",
+          "width": 960,
+          "bytes": 149394
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-1280.webp",
+          "width": 1280,
+          "bytes": 234722
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-1920.webp",
+          "width": 1920,
+          "bytes": 542160
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-2560.webp",
+          "width": 2560,
+          "bytes": 1097262
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-3200.webp",
+          "width": 3200,
+          "bytes": 1757322
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-4096.webp",
+          "width": 4096,
+          "bytes": 2879120
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-refresh/wasd-en.png",
+      "originalBytes": 11368420,
+      "width": 4096,
+      "height": 2731,
+      "figma": {
+        "fileKey": "rGW1jeijHl87JxPnjF9Rjh",
+        "nodeId": "466:7830"
+      },
+      "variants": [
+        {
+          "url": "/assets/responsive/a634d42031597b1d-480.webp",
+          "width": 480,
+          "bytes": 58388
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-640.webp",
+          "width": 640,
+          "bytes": 105510
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-960.webp",
+          "width": 960,
+          "bytes": 225132
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-1280.webp",
+          "width": 1280,
+          "bytes": 417568
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-1920.webp",
+          "width": 1920,
+          "bytes": 896720
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-2560.webp",
+          "width": 2560,
+          "bytes": 2009852
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-3200.webp",
+          "width": 3200,
+          "bytes": 3172854
+        },
+        {
+          "url": "/assets/responsive/a634d42031597b1d-4096.webp",
+          "width": 4096,
+          "bytes": 4531506
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-refresh/alfa-en.png",
+      "originalBytes": 20534496,
+      "width": 4096,
+      "height": 2731,
+      "figma": {
+        "fileKey": "rGW1jeijHl87JxPnjF9Rjh",
+        "nodeId": "466:7844"
+      },
+      "variants": [
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-480.webp",
+          "width": 480,
+          "bytes": 163654
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-640.webp",
+          "width": 640,
+          "bytes": 287900
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-960.webp",
+          "width": 960,
+          "bytes": 680966
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-1280.webp",
+          "width": 1280,
+          "bytes": 1170488
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-1920.webp",
+          "width": 1920,
+          "bytes": 2534136
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-2560.webp",
+          "width": 2560,
+          "bytes": 4475432
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-3200.webp",
+          "width": 3200,
+          "bytes": 6807484
+        },
+        {
+          "url": "/assets/responsive/90e8f24307d4cfa7-4096.webp",
+          "width": 4096,
+          "bytes": 10977306
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-refresh/nspk-en.png",
+      "originalBytes": 9037876,
+      "width": 4096,
+      "height": 2731,
+      "figma": {
+        "fileKey": "rGW1jeijHl87JxPnjF9Rjh",
+        "nodeId": "466:7859"
+      },
+      "variants": [
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-480.webp",
+          "width": 480,
+          "bytes": 34032
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-640.webp",
+          "width": 640,
+          "bytes": 57880
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-960.webp",
+          "width": 960,
+          "bytes": 149394
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-1280.webp",
+          "width": 1280,
+          "bytes": 234722
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-1920.webp",
+          "width": 1920,
+          "bytes": 542160
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-2560.webp",
+          "width": 2560,
+          "bytes": 1097262
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-3200.webp",
+          "width": 3200,
+          "bytes": 1757322
+        },
+        {
+          "url": "/assets/responsive/47a665e6712dfb63-4096.webp",
+          "width": 4096,
+          "bytes": 2879120
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-refresh/vtb-ru-updated.png",
+      "originalBytes": 12054020,
+      "width": 4096,
+      "height": 3072,
+      "figma": {
+        "fileKey": "rGW1jeijHl87JxPnjF9Rjh",
+        "nodeId": "394:11095"
+      },
+      "variants": [
+        {
+          "url": "/assets/responsive/84896a872dd1e226-480.webp",
+          "width": 480,
+          "bytes": 72306
+        },
+        {
+          "url": "/assets/responsive/84896a872dd1e226-640.webp",
+          "width": 640,
+          "bytes": 138730
+        },
+        {
+          "url": "/assets/responsive/84896a872dd1e226-960.webp",
+          "width": 960,
+          "bytes": 284436
+        },
+        {
+          "url": "/assets/responsive/84896a872dd1e226-1280.webp",
+          "width": 1280,
+          "bytes": 522118
+        },
+        {
+          "url": "/assets/responsive/84896a872dd1e226-1920.webp",
+          "width": 1920,
+          "bytes": 1225384
+        },
+        {
+          "url": "/assets/responsive/84896a872dd1e226-2560.webp",
+          "width": 2560,
+          "bytes": 2099810
+        },
+        {
+          "url": "/assets/responsive/84896a872dd1e226-3200.webp",
+          "width": 3200,
+          "bytes": 3154702
+        },
+        {
+          "url": "/assets/responsive/84896a872dd1e226-4096.webp",
+          "width": 4096,
+          "bytes": 4929138
+        }
+      ]
+    },
+    {
+      "original": "/assets/main-refresh/vtb-en-updated.png",
+      "originalBytes": 3583291,
+      "width": 2159,
+      "height": 1537,
+      "figma": {
+        "fileKey": "rGW1jeijHl87JxPnjF9Rjh",
+        "nodeId": "466:7935"
+      },
+      "variants": [
+        {
+          "url": "/assets/responsive/b58848637984f100-480.webp",
+          "width": 480,
+          "bytes": 110018
+        },
+        {
+          "url": "/assets/responsive/b58848637984f100-640.webp",
+          "width": 640,
+          "bytes": 196240
+        },
+        {
+          "url": "/assets/responsive/b58848637984f100-960.webp",
+          "width": 960,
+          "bytes": 456890
+        },
+        {
+          "url": "/assets/responsive/b58848637984f100-1280.webp",
+          "width": 1280,
+          "bytes": 863370
+        },
+        {
+          "url": "/assets/responsive/b58848637984f100-1920.webp",
+          "width": 1920,
+          "bytes": 2125528
+        },
+        {
+          "url": "/assets/responsive/b58848637984f100-2159.webp",
+          "width": 2159,
+          "bytes": 2403642
+        }
+      ]
+    }
+  ],
+  "pages": {
+    "ru/index.html": [
+      {
+        "original": "/assets/main-refresh/vtb-ru-updated.png",
+        "sizes": "(max-width:467px) calc(155.260vw - 80.735px), (max-width:599px) 646px, (max-width:899px) calc(77.630vw - 102.472px), (max-width:1099px) 597px, (max-width:1399px) calc(38.815vw - 6.210px), 511px"
+      },
+      {
+        "original": "/assets/main-refresh/nspk-en.png",
+        "sizes": "(max-width:467px) calc(140.840vw - 73.237px), (max-width:599px) 586px, (max-width:899px) calc(70.420vw - 92.954px), (max-width:1099px) 541px, (max-width:1399px) calc(35.210vw - 5.634px), 464px"
+      },
+      {
+        "original": "/assets/main-refresh/alfa-ru.png",
+        "sizes": "(max-width:467px) calc(141.870vw - 73.772px), (max-width:599px) 591px, (max-width:899px) calc(70.935vw - 93.634px), (max-width:1099px) 545px, (max-width:1399px) calc(35.468vw - 5.675px), 467px"
+      },
+      {
+        "original": "/assets/main-refresh/wasd-ru.png",
+        "sizes": "(max-width:467px) calc(246.560vw - 128.211px), (max-width:599px) 1026px, (max-width:899px) calc(123.280vw - 162.730px), (max-width:1099px) 947px, (max-width:1399px) calc(61.640vw - 9.862px), 812px"
+      }
+    ],
+    "ru/cases/alfa/index.html": [
+      {
+        "original": "/assets/alfa/imgImage54.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/alfa/imgImage55.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/alfa/imgImage91.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/imgImage92.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/imgImage93.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/imgImage83.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/imgImage78.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/imgImage81.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/imgImage82.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/imgImage86.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/imgImage87.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/imgImage86.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/imgImage85.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/imgImage94.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/imgImage95.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/imgImage96.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/case-refresh/alfa-video-preview.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/alfa/imgImage73.png",
+        "sizes": "(max-width:700px) 73vw, (max-width:1440px) 40vw, 557px"
+      },
+      {
+        "original": "/assets/alfa/imgPicture2.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc((100vw - 96px) / 3), (max-width:1440px) calc((100vw - 160px) / 3), 427px"
+      },
+      {
+        "original": "/assets/alfa/imgPicture1.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc((100vw - 96px) / 3), (max-width:1440px) calc((100vw - 160px) / 3), 427px"
+      },
+      {
+        "original": "/assets/alfa/imgPicture4.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc((100vw - 96px) / 3), (max-width:1440px) calc((100vw - 160px) / 3), 427px"
+      }
+    ],
+    "ru/cases/wasd/index.html": [
+      {
+        "original": "/assets/wasd-update/b9bc6.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/wasd-update/8ad15.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/wasd-update/7e884.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/wasd-update/13717.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/wasd-update/9f3cf.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/wasd-update/89790.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/wasd-update/6cc0e.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/wasd-update/fc39a.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/case-refresh/nspk-banner-ru.png",
+        "sizes": "(max-width:700px) calc(125vw - 50px), (max-width:1440px) calc(73vw - 88px), 958px"
+      }
+    ],
+    "ru/cases/nspk/index.html": [
+      {
+        "original": "/assets/case-refresh/nspk-hero-background.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/case-refresh/nspk-hero-screen.png",
+        "sizes": "(max-width:700px) calc(56vw - 22px), (max-width:1440px) 56vw, 734px"
+      },
+      {
+        "original": "/assets/nspk/112-3936-imgImage261.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk/112-3936-imgImage262.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk/112-3936-imgImage263.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk/111-8727-imgImage56.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk/112-4124-imgImage265.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk/112-4124-imgImage264.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk/112-4163-imgImage72.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk/112-4163-imgImage266.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/468cd.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/974ff.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/af5a8.png",
+        "sizes": "(max-width:700px) 110vw, (max-width:1440px) 60vw, 800px"
+      },
+      {
+        "original": "/assets/nspk-update/ec1dd.png",
+        "sizes": "(max-width:700px) 110vw, (max-width:1440px) 60vw, 800px"
+      },
+      {
+        "original": "/assets/nspk-update/38a45.png",
+        "sizes": "(max-width:700px) 110vw, (max-width:1440px) 60vw, 800px"
+      }
+    ],
+    "ru/cases/vtb/index.html": [
+      {
+        "original": "/assets/vtb/hero-ru-updated.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb/slider-imgImage54.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb/slider-imgImage56.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb/slider-imgImage55.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb/imgImage97.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb/imgImage91.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb/imgImage92.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb/imgImage93.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb/imgImage94.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb/imgImage95.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb/imgImage96.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb/imgImage78.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb/imgImage81.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb/imgImage82.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb/imgImage83.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb/imgImage86.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb/imgImage87.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb/imgImage88.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb/imgImage85.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/case-refresh/alfa-phone-ru.png",
+        "sizes": "(max-width:700px) calc(72vw - 29px), (max-width:1440px) calc(49vw - 59px), 645px"
+      }
+    ],
+    "en/index.html": [
+      {
+        "original": "/assets/main-refresh/vtb-en-updated.png",
+        "sizes": "(max-width:467px) calc(155.260vw - 80.735px), (max-width:599px) 646px, (max-width:899px) calc(77.630vw - 102.472px), (max-width:1099px) 597px, (max-width:1399px) calc(38.815vw - 6.210px), 511px"
+      },
+      {
+        "original": "/assets/main-refresh/nspk-en.png",
+        "sizes": "(max-width:467px) calc(140.840vw - 73.237px), (max-width:599px) 586px, (max-width:899px) calc(70.420vw - 92.954px), (max-width:1099px) 541px, (max-width:1399px) calc(35.210vw - 5.634px), 464px"
+      },
+      {
+        "original": "/assets/main-refresh/alfa-en.png",
+        "sizes": "(max-width:467px) calc(138.390vw - 71.963px), (max-width:599px) 576px, (max-width:899px) calc(69.195vw - 91.337px), (max-width:1099px) 532px, (max-width:1399px) calc(34.597vw - 5.536px), 456px"
+      },
+      {
+        "original": "/assets/main-refresh/wasd-en.png",
+        "sizes": "(max-width:467px) calc(243.280vw - 126.506px), (max-width:599px) 1013px, (max-width:899px) calc(121.640vw - 160.565px), (max-width:1099px) 935px, (max-width:1399px) calc(60.820vw - 9.731px), 801px"
+      }
+    ],
+    "en/cases/alfa/index.html": [
+      {
+        "original": "/assets/alfa/en/imgImage54Eng.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/alfa/en/research.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage91Eng.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage91Eng1.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage91Eng2.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage88.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage78.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage81.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage82.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage83.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage86.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage87.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage85.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage83.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage91Eng3.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage91Eng4.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/case-refresh/alfa-video-preview.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/alfa/en/imgImage73.png",
+        "sizes": "(max-width:700px) 73vw, (max-width:1440px) 40vw, 557px"
+      },
+      {
+        "original": "/assets/alfa/imgPicture2.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc((100vw - 96px) / 3), (max-width:1440px) calc((100vw - 160px) / 3), 427px"
+      },
+      {
+        "original": "/assets/alfa/imgPicture1.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc((100vw - 96px) / 3), (max-width:1440px) calc((100vw - 160px) / 3), 427px"
+      },
+      {
+        "original": "/assets/alfa/imgPicture4.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc((100vw - 96px) / 3), (max-width:1440px) calc((100vw - 160px) / 3), 427px"
+      }
+    ],
+    "en/cases/wasd/index.html": [
+      {
+        "original": "/assets/wasd-update/846d2.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/wasd-update/8ad15.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/wasd-update/7e884.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/wasd-update/813fe.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/wasd-update/5db4b.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/wasd-update/9f3cf.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/wasd-update/2685b.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/wasd-update/62f34.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/wasd-update/23521.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/case-refresh/nspk-banner-ru.png",
+        "sizes": "(max-width:700px) calc(125vw - 50px), (max-width:1440px) calc(73vw - 88px), 958px"
+      },
+      {
+        "original": "/assets/case-refresh/nspk-banner-en.png",
+        "sizes": "(max-width:700px) calc(125vw - 50px), (max-width:1440px) calc(73vw - 88px), 958px"
+      }
+    ],
+    "en/cases/nspk/index.html": [
+      {
+        "original": "/assets/nspk-update/cpvt-head.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/a89fe.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/a64ed.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/9ce9e.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/9e793.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/0b2a2.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/91202.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/6ad4b.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/b1fd6.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/f0d17.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/773aa.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/772ea.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/nspk-update/af5a8.png",
+        "sizes": "(max-width:700px) 110vw, (max-width:1440px) 60vw, 800px"
+      },
+      {
+        "original": "/assets/nspk-update/ec1dd.png",
+        "sizes": "(max-width:700px) 110vw, (max-width:1440px) 60vw, 800px"
+      }
+    ],
+    "en/cases/vtb/index.html": [
+      {
+        "original": "/assets/vtb-en/ec1dd.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb-en/a3a67.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb-en/03712.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb-en/68892.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb/slider-imgImage56.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb/slider-imgImage55.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb-en/867ef.png",
+        "sizes": "(max-width:700px) calc(100vw - 40px), (max-width:1100px) calc(100vw - 64px), (max-width:1440px) calc(100vw - 120px), 1320px"
+      },
+      {
+        "original": "/assets/vtb-en/4ce54.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb-en/ace65.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb-en/2ad32.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb-en/a2602.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb-en/cef83.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb-en/eeee0.png",
+        "sizes": "(max-width:700px) calc(85vw - 34px), (max-width:1440px) 48vw, 650px"
+      },
+      {
+        "original": "/assets/vtb-en/77af4.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb-en/a06b9.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb-en/1bece.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb-en/610e4.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb-en/d32dd.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb-en/94637.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb-en/1dce3.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/vtb-en/0d3c6.png",
+        "sizes": "(max-width:700px) 140px, (max-width:1440px) calc((100vw - 300px) / 8), 145px"
+      },
+      {
+        "original": "/assets/case-refresh/alfa-phone-ru.png",
+        "sizes": "(max-width:700px) calc(72vw - 29px), (max-width:1440px) calc(49vw - 59px), 645px"
+      },
+      {
+        "original": "/assets/case-refresh/alfa-phone-en.png",
+        "sizes": "(max-width:700px) calc(72vw - 29px), (max-width:1440px) calc(49vw - 59px), 645px"
+      }
+    ]
+  }
+}
