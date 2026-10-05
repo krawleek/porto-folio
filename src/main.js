@@ -16,16 +16,16 @@ function drawConnectors(){
  if(innerWidth<1100||(board.dataset.section&&board.dataset.section!=='main'))return;
  const b=board.getBoundingClientRect();
  const point=(selector,side)=>{const r=$(selector).getBoundingClientRect();return {x:(side==='left'?r.left:side==='right'?r.right:r.left+r.width/2)-b.left,y:(side==='top'?r.top:side==='bottom'?r.bottom:r.top+r.height/2)-b.top};};
- const root=point('.profile','right'),work=point('.projects-link','bottom'),about=point('.about-link','left'),left=point('.projects-link','left'),right=point('.projects-link','right'),tool=point('.toolbox','bottom'),top=point('.projects-link','top');
- const curves=[`M${root.x},${root.y} C${root.x+85},${root.y} ${about.x-80},${about.y} ${about.x},${about.y}`,`M${root.x},${root.y} C${root.x+75},${root.y} ${left.x-60},${left.y} ${left.x},${left.y}`,`M${tool.x},${tool.y} C${tool.x},${tool.y+36} ${top.x},${top.y-36} ${top.x},${top.y}`];
- const dots=[root,about,left,right,tool,top,work];
+ const root=point('.profile','right'),work=point('.projects-link','bottom'),left=point('.projects-link','left'),right=point('.projects-link','right'),tool=point('.toolbox','bottom'),top=point('.projects-link','top');
+ const curves=[`M${root.x},${root.y} C${root.x+75},${root.y} ${left.x-60},${left.y} ${left.x},${left.y}`,`M${tool.x},${tool.y} C${tool.x},${tool.y+36} ${top.x},${top.y-36} ${top.x},${top.y}`];
+ const dots=[root,left,right,tool,top,work];
  const vtb=point('.vtb','left');vtb.y=$('.vtb').getBoundingClientRect().top-b.top+90.5;
  curves.push(`M${right.x},${right.y} C${right.x+95},${right.y} ${vtb.x-100},${vtb.y} ${vtb.x},${vtb.y}`);
  for(const selector of ['.wasd','.nspk','.alfa']){const end=point(selector,'top');curves.push(`M${work.x},${work.y} C${work.x},${work.y+210} ${end.x},${end.y-210} ${end.x},${end.y}`);dots.push(end);}
  svg.setAttribute('viewBox',`0 0 ${b.width} ${b.height}`);
  svg.innerHTML=curves.map(d=>`<path d="${d}"/>`).join('')+dots.map(p=>`<circle cx="${p.x}" cy="${p.y}" r="2.5"/>`).join('');
 }
-enableBoardDrag(board,'.project, .badge, .deposit, .cat, .about-link, .projects-link, .toolbox, .facts, .selected, .guestbook',drawConnectors);
+enableBoardDrag(board,'.project, .badge, .deposit, .cat, .projects-link, .toolbox, .selected, .guestbook',drawConnectors);
 addEventListener('section-position-restored',drawConnectors);
 addEventListener('board-drag',drawConnectors);
 const connectorObserver=new ResizeObserver(drawConnectors);

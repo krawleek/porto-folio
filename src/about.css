@@ -18,3 +18,5 @@
 .trophy[data-draggable]{pointer-events:auto}
 .message-send-icon{display:block;width:16px;height:16px;background:currentColor;mask:url('/assets/about-map/send.svg') center/contain no-repeat}.fact-note p+p{margin-top:8px}
 .message-form{overflow:hidden;transform-origin:50% 0}.message-editor{position:relative;padding-bottom:36px}.message-form{padding-bottom:16px}.message-form .message-send{right:-4px;bottom:-8px}.message-success{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:144px;text-align:center;padding:8px}.message-success svg{color:#007aff}.message-success strong{font-size:17px;font-weight:500}.message-form .message-success p{margin:0;color:var(--muted);font-size:14px}.message-success button{background:none;border:0;color:var(--accent);font:500 14px/20px var(--font);padding:8px 16px}.message-success:focus{outline:none}.message-form.is-success{padding:20px 16px}
+
+@media(min-width:600px) and (max-width:1099px){.about-board .projects-link{grid-column:1/-1;grid-row:2}}

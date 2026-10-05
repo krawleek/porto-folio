@@ -5,7 +5,7 @@ const sectionFor=path=>path.includes('/about/')?'about':'main';
 let current=sectionFor(location.pathname),busy=false,queued=null;
 board.dataset.section=current;
 // Keep shared board labels mounted and outside section fade animations.
-const sections=new Map(),shared='.profile,.board-navigation,.connectors,.facts,.selected';
+const sections=new Map(),shared='.profile,.board-navigation,.connectors,.selected';
 function register(section,elements){elements.forEach(el=>{el.dataset.boardSection=section;});sections.set(section,elements);}
 register(current,[...board.children].filter(el=>!el.matches(shared)));
 const titles=new Map([[current,document.title]]);
@@ -47,9 +47,9 @@ export async function switchSection(href,{history=true}={}){
   current=next;
   document.title=titles.get(next);
   if(history)window.history.pushState({section:next},'',url.pathname);
-  document.querySelector('.about-link').href=`/${language}/about/`;
+  document.querySelector('.profile-about-link').href=`/${language}/about/`;
   document.querySelector('.projects-link').href=`/${language}/#projects`;
-  for(const [selector,active] of [['.about-link',next==='about'],['.projects-link',next==='main']]){const el=document.querySelector(selector);if(active)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');}
+  for(const [selector,active] of [['.profile-about-link',next==='about'],['.projects-link',next==='main']]){const el=document.querySelector(selector);if(active)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');}
   document.querySelectorAll('[data-lang]').forEach(link=>link.href=`/${link.dataset.lang}/${next==='about'?'about/':''}`);
   dispatchEvent(new Event('section-position-restored'));
   scrollTo({top:scroll,behavior:'instant'});
@@ -62,4 +62,4 @@ export async function switchSection(href,{history=true}={}){
 }
 addEventListener('popstate',()=>{if(/^\/(ru|en)\/(about\/)?$/.test(location.pathname))switchSection(location.href,{history:false});});
 // Warm the other section on intent; the existing card remains fully interactive.
-for(const link of document.querySelectorAll('.board-navigation a'))link.addEventListener('pointerenter',()=>prepare(sectionFor(new URL(link.href).pathname)).catch(()=>{}),{once:true});
+for(const link of document.querySelectorAll('.board-navigation a, .profile-about-link'))link.addEventListener('pointerenter',()=>prepare(sectionFor(new URL(link.href).pathname)).catch(()=>{}),{once:true});

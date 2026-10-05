@@ -16,9 +16,9 @@ function drawConnectors(){
  if(innerWidth<1100||(board.dataset.section&&board.dataset.section!=='about'))return;
  const b=board.getBoundingClientRect();
  const point=(selector,side)=>{const r=$(selector).getBoundingClientRect();return {x:(side==='right'?r.right:r.left)-b.left,y:r.top+r.height/2-b.top};};
- const root=point('.profile','right'),about=point('.about-link','left'),aboutEnd=point('.about-link','right'),work=point('.projects-link','left'),photo=point('.cat-photo','left');
- const curves=[`M${root.x},${root.y} C${root.x+75},${root.y} ${about.x-80},${about.y} ${about.x},${about.y}`,`M${root.x},${root.y} C${root.x+90},${root.y} ${work.x-80},${work.y} ${work.x},${work.y}`,`M${aboutEnd.x},${aboutEnd.y} C${aboutEnd.x+100},${aboutEnd.y} ${photo.x-90},${photo.y} ${photo.x},${photo.y}`];
- svg.setAttribute('viewBox',`0 0 ${b.width} ${b.height}`);svg.innerHTML=curves.map(d=>`<path d="${d}"/>`).join('')+[root,about,aboutEnd,work,photo].map(p=>`<circle cx="${p.x}" cy="${p.y}" r="2.5"/>`).join('');
+ const root=point('.profile','right'),work=point('.projects-link','left'),photo=point('.cat-photo','left');
+ const curves=[`M${root.x},${root.y} C${root.x+90},${root.y} ${work.x-80},${work.y} ${work.x},${work.y}`,`M${root.x},${root.y} C${root.x+100},${root.y} ${photo.x-90},${photo.y} ${photo.x},${photo.y}`];
+ svg.setAttribute('viewBox',`0 0 ${b.width} ${b.height}`);svg.innerHTML=curves.map(d=>`<path d="${d}"/>`).join('')+[root,work,photo].map(p=>`<circle cx="${p.x}" cy="${p.y}" r="2.5"/>`).join('');
 }
 addEventListener('section-position-restored',drawConnectors);
 addEventListener('board-drag',drawConnectors);
@@ -48,7 +48,7 @@ $$('[data-fact]').forEach(button=>{
 document.addEventListener('pointerdown',event=>{if(!event.target.closest('.fact-item'))closeFacts();});
 document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeFacts();closeMessage();}});
 
-enableBoardDrag(board,'.education-fact .fact-trigger, .mentoring-fact .fact-trigger, .challenge-fact .fact-trigger, .photo, .writing-icons, .p5-mark, .about-link, .projects-link, .photography-copy, .post, .ball-play, .message-invite, .trophy, .facts, .selected',drawConnectors);
+enableBoardDrag(board,'.education-fact .fact-trigger, .mentoring-fact .fact-trigger, .challenge-fact .fact-trigger, .photo, .writing-icons, .p5-mark, .projects-link, .photography-copy, .post, .ball-play, .message-invite, .trophy, .selected',drawConnectors);
 const sticker=$('.home-sticker .fact-trigger');sticker.setAttribute('aria-describedby','sticker-help');
 let drag=null,offset={x:0,y:0};
 function placeSticker(x,y){const base=$('.home-sticker').getBoundingClientRect(),area=board.getBoundingClientRect();offset={x:Math.max(area.left-base.left,Math.min(x,area.right-base.left-sticker.offsetWidth)),y:Math.max(area.top-base.top,Math.min(y,area.bottom-base.top-sticker.offsetHeight))};for(const [axis,value] of Object.entries(offset))$('.home-sticker').style.setProperty(`--drag-${axis}`,`${value}px`);}
