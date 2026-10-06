@@ -6,7 +6,18 @@ if(root.classList.contains('is-loading')){
  loader.innerHTML='<div class="loader-word" aria-hidden="true"><span class="loader-dot"></span><span class="loader-text">Design</span></div><svg class="loader-curve" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H100V0Q50 40 0 0Z"/></svg>';
  document.body.append(loader);root.classList.add('loader-mounted');
  const word=loader.querySelector('.loader-text');
- const ready=Promise.race([Promise.allSettled([document.fonts.ready,...[...document.images].filter(img=>img.loading!=='lazy').map(img=>img.decode().catch(()=>{}))]),pause(3000)]);
+ const firstScreenReady=new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))).then(()=>{
+  const visible=[...document.images].filter(img=>{
+   const rect=img.getBoundingClientRect();
+   return rect.width>0&&rect.height>0&&rect.bottom>0&&rect.top<innerHeight&&rect.right>0&&rect.left<innerWidth&&getComputedStyle(img).visibility!=='hidden';
+  });
+  // Native lazy loading must not leave visible cards blank when the intro ends.
+  return Promise.allSettled([document.fonts.ready,...visible.map(img=>{
+   img.loading='eager';
+   return img.decode().catch(()=>{});
+  })]);
+ });
+ const ready=Promise.race([firstScreenReady,pause(3000)]);
  (async()=>{
   if(!reduced.matches){
    const words=['Design','UX/UI','Vibecoding','Prototyping','Business','Solutions','Metrics','Bla bla bla'];
