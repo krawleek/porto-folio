@@ -22,3 +22,6 @@ html.is-loading:not(.loader-mounted)::before{content:'';position:fixed;inset:0;b
 @keyframes board-content-in{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
 .portfolio-page{overflow-anchor:none}
+
+/* Main/About backgrounds also stay white during page transitions. */
+html.portfolio-page,html.portfolio-page::after{background:#ffffff}
