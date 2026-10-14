@@ -1,3 +1,4 @@
+import {requestCaseAccess} from './case-access.js';
 import './page-motion.css';
 const root=document.documentElement,reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -57,6 +58,7 @@ export function navigateWithFade(href){
 document.addEventListener('click',event=>{
  const link=event.target.closest('a[href]');
  if(!link||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||link.origin!==location.origin||link.target==='_blank'||link.hasAttribute('download')||link.pathname===location.pathname)return;
+ if(!link.matches('[data-project]')&&/^\/(ru|en)\/cases\/nspk\/?$/.test(link.pathname)&&requestCaseAccess(link,event,navigateWithFade)){event.preventDefault();return;}
  event.preventDefault();navigateWithFade(link.href);
 });
 addEventListener('pageshow',event=>{

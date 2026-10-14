@@ -270,3 +270,9 @@ width:125%}
 display:none}
 }
 
+
+/* Updated bilingual CPVT banner from Figma. */
+.wasd-next{background:linear-gradient(90deg,#f9faff,#e9effb)}
+.wasd-next-art{inset:auto;left:41.136%;top:18.028%;width:72.576%;height:auto;aspect-ratio:958/579;pointer-events:none}
+.wasd-next-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-width:700px){.wasd-next-art{left:20%;top:220px;width:125%}}

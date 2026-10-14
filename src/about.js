@@ -79,7 +79,7 @@ form.addEventListener('submit',async event=>{
   if(!response.ok)throw new Error(response.status===429?'rate':'server');
   const result=await response.json();if(!result.ok)throw new Error('server');
   form.reset();status.textContent='';await surface.sent();
- }catch(error){status.textContent=error.message==='rate'?(en?'Please wait a minute before sending again.':'Подождите минуту перед следующим сообщением.'):(en?'Could not send. Your text is saved here; please try again.':'Не удалось отправить. Текст сохранён в поле — попробуйте ещё раз.');}
+ }catch(error){status.textContent=error.message==='rate'?(en?'Please wait a\u00a0minute before sending again.':'Подождите минуту перед\u00a0следующим сообщением.'):(en?'Could not send. Your text is saved here; please try again.':'Не\u00a0удалось отправить. Текст сохранён в\u00a0поле — попробуйте ещё раз.');}
  finally{send.disabled=false;}
 });
 form.addEventListener('keydown',event=>{if((event.metaKey||event.ctrlKey)&&event.key==='Enter'){event.preventDefault();form.requestSubmit();}});

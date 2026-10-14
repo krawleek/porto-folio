@@ -69,7 +69,7 @@ function openProject(link,event){
  }
 }
 document.querySelectorAll('[data-project]').forEach(link=>link.addEventListener('click',event=>{if(event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();openProject(link,event);}));
-form.addEventListener('submit',event=>{event.preventDefault();if(input.value!=='121064'){helper.textContent=en?'Incorrect password':'Пароль неверный';input.setAttribute('aria-invalid','true');input.focus();return;}access=true;try{sessionStorage.setItem('ndaAccess','true');}catch{}form.classList.add('success');helper.textContent=en?'Opening case':'Иду к кейсу';setTimeout(()=>navigateWithFade(destination),350);});
+form.addEventListener('submit',event=>{event.preventDefault();if(input.value!=='121064'){helper.textContent=en?'Incorrect password':'Пароль неверный';input.setAttribute('aria-invalid','true');input.focus();return;}access=true;try{sessionStorage.setItem('ndaAccess','true');}catch{}form.classList.add('success');helper.textContent=en?'Opening case':'Иду к\u00a0кейсу';setTimeout(()=>navigateWithFade(destination),350);});
 input.addEventListener('input',()=>{helper.textContent='';input.removeAttribute('aria-invalid');});
 dialog.querySelector('.close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});

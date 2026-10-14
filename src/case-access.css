@@ -1,0 +1,37 @@
+#cpvt-sheet{box-sizing:border-box;border:0;padding:32px;color:#101012;background:#fff;box-shadow:0 20px 80px #0003;font-family:var(--font,Arial,sans-serif)}
+#cpvt-sheet::backdrop{background:#0006;backdrop-filter:blur(4px)}
+#cpvt-sheet h2{font-size:28px;line-height:32px;letter-spacing:-1px;font-weight:500;margin:16px 0}
+#cpvt-sheet .close{position:absolute;top:12px;right:12px;width:36px;height:36px;border:0;border-radius:50%;background:#f0f0f0;font-size:26px;cursor:pointer}
+#cpvt-sheet .lock-icon{width:24px;height:24px}
+#cpvt-sheet .password-form{width:100%;animation:none;z-index:auto}
+#cpvt-sheet input,.cpvt-password-popover input{box-sizing:border-box;width:100%}
+#cpvt-sheet .confirm,.cpvt-password-popover .confirm{border:0;cursor:pointer}
+.cpvt-password-popover{font-family:var(--font,Arial,sans-serif)}
+.cpvt-password-popover{position:fixed;z-index:50;width:175px}.cpvt-password-popover[hidden]{display:none}.cpvt-password-popover .password-form{position:relative;display:block}.cpvt-password-popover label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.cpvt-password-popover input{min-height:36px;height:36px;padding:8px 32px 8px 10px;border:1px solid #78788029;border-radius:0 16px 16px 16px;background:white;font:500 14px/20px var(--font,sans-serif);outline:none;box-shadow:0 4px 16px #1010120a}.cpvt-password-popover input:focus{border:2px solid #007aff;padding-left:9px}.cpvt-password-popover input[aria-invalid=true]{border:2px solid #ff9500}.cpvt-password-popover .confirm{position:absolute;right:5px;top:5px;width:26px;height:26px;min-height:0;padding:4px;border-radius:50%;background:transparent;color:transparent;font-size:0}.cpvt-password-popover .confirm:after{content:'';display:block;width:18px;height:18px;background:url('/assets/input-imgSend1.svg') center/contain no-repeat}.cpvt-password-popover .helper{margin:4px 0 0;padding:0 4px;font-size:12px;line-height:16px;min-height:0;color:#a95d00}.cpvt-password-popover .password-form:has([aria-invalid=true]) .confirm:after{background-image:url('/assets/input-imgWarning.svg')}.cpvt-password-popover .success input{border:2px solid #34c759}.cpvt-password-popover .success .helper{color:#248b3e}.cpvt-password-popover .success .confirm:after{background-image:url('/assets/input-imgCheckmarkCircle.svg')}
+#cpvt-password{-webkit-text-security:disc}
+
+/* Keep the access-code sheet inside the visible area above the keyboard. */
+@media(max-width:1099px){
+ #cpvt-sheet{position:fixed;inset:auto 0 var(--sheet-keyboard,0px);margin:0 auto;width:100%;max-width:520px;max-height:calc(var(--sheet-viewport,100dvh) - 16px);overflow-y:auto;overscroll-behavior:contain;border-radius:24px 24px 0 0;padding:24px 24px max(24px,env(safe-area-inset-bottom))}
+ #cpvt-sheet input{font-size:16px;scroll-margin-block:16px}
+ #cpvt-sheet .helper:empty{min-height:0}
+}
+
+/* Rounded, inline-submit version of the desktop access-code field. */
+#cpvt-sheet .password-form{position:relative;display:block}
+#cpvt-sheet .password-form label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#cpvt-sheet .password-form input{display:block;width:100%;height:48px;min-height:48px;padding:12px 52px 12px 20px;border:1px solid #78788029;border-radius:16px;background:#fff;color:var(--text);font:500 16px/22px var(--font,sans-serif);outline:none}
+#cpvt-sheet .password-form input::placeholder{color:#3c3c4385}
+#cpvt-sheet .password-form input:focus{border:2px solid #007aff;padding:11px 51px 11px 19px}
+#cpvt-sheet .password-form input[aria-invalid=true]{border:2px solid #ff9500;padding:11px 51px 11px 19px}
+#cpvt-sheet .password-form .confirm{position:absolute;right:4px;top:2px;display:grid;place-items:center;width:44px;height:44px;min-height:0;padding:0;border:0;border-radius:14px;background:transparent;color:transparent;font-size:0}
+#cpvt-sheet .password-form .confirm:after{content:'';display:block;width:16px;height:16px;background:url('/assets/input-imgSend1.svg') center/contain no-repeat;opacity:.55}
+#cpvt-sheet .password-form:focus-within .confirm:after{opacity:1}
+#cpvt-sheet .password-form .confirm:focus-visible{outline:2px solid #007aff;outline-offset:-3px}
+#cpvt-sheet .password-form .helper{margin:8px 0 0;padding:0 4px;min-height:0;font-size:12px;line-height:16px;color:#a95d00}
+#cpvt-sheet .password-form .helper:empty{display:none}
+#cpvt-sheet .password-form:has([aria-invalid=true]) .confirm:after{background-image:url('/assets/input-imgWarning.svg');opacity:1}
+#cpvt-sheet .password-form.success input{border:2px solid #34c759;padding:11px 51px 11px 19px}
+#cpvt-sheet .password-form.success .confirm:after{background-image:url('/assets/input-imgCheckmarkCircle.svg');opacity:1}
+#cpvt-sheet .password-form.success .helper{color:#248b3e}
+
